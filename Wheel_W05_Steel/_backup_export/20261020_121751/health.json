@@ -1,0 +1,862 @@
+{
+ "casting": "Wheel_W05_Steel",
+ "build_script": "SourceArt\\Blender\\Wheel_W05_Steel\\build_Wheel_W05_Steel.py",
+ "build_script_sha256": "86e7da3493bad905248e86f21ca3eb4ed94c2d4e3aa498edfe7d17a27ba3b251",
+ "build_script_mtime": "Tue Oct 20 12:13:00 2026",
+ "exporter": "clean-v1 (16 Oct 2026)",
+ "mode": "production",
+ "written": "2026-10-20 12:15:33",
+ "complete": true,
+ "error": null,
+ "thresholds": {
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "edges_with_3plus_faces": 0,
+  "degenerate_faces": 0,
+  "near_duplicate_verts": 0,
+  "sliver_pct": 0.5,
+  "needle_pct": 0.5,
+  "flipped_winding_edges": 0,
+  "inside_out_shells": 0,
+  "backfacing_normal_corners": 0,
+  "loose_verts": 0,
+  "loose_edges": 0,
+  "spike_notch_vertices": 0
+ },
+ "budget": {
+  "W05_Tire": 9000,
+  "W05_Hub": 4000,
+  "W05_HubBright": 1500
+ },
+ "normals": "authored",
+ "pass": false,
+ "units": "uu, casting Blender frame (+X front, +Y left, +Z up); 1 uu = 0.01 Blender m",
+ "parts": {
+  "SM_Wheel_W05_Steel": {
+   "gate": "FAIL",
+   "failures": [
+    "spike_notch_vertices = 322 > 0"
+   ],
+   "summary": {
+    "tris": 14348,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "needle_faces_lt1deg": 0,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "inside_out_shells": 0,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "spike_notch_vertices": 322,
+    "spike_notch_hidden": 61,
+    "concave_patches": 3
+   },
+   "sdf_parts": [
+    {
+     "raw": 905760,
+     "decimated": 9026,
+     "final": 9010,
+     "bad_after_decimate": 0,
+     "flips": 479,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0685,
+     "t_mesh": 7.0,
+     "t_dec": 65.6,
+     "t_clean": 0.5,
+     "part": "W05_Tire",
+     "cell": 0.08,
+     "script_target": 9000,
+     "target": 9000,
+     "overrides": null
+    },
+    {
+     "raw": 631924,
+     "decimated": 4010,
+     "final": 4004,
+     "bad_after_decimate": 0,
+     "flips": 367,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 7.4,
+     "t_dec": 45.4,
+     "t_clean": 0.2,
+     "part": "W05_Hub",
+     "cell": 0.06,
+     "script_target": 4000,
+     "target": 4000,
+     "overrides": null
+    },
+    {
+     "raw": 137040,
+     "decimated": 1506,
+     "final": 1334,
+     "bad_after_decimate": 0,
+     "flips": 85,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0002,
+     "t_mesh": 1.0,
+     "t_dec": 6.0,
+     "t_clean": 0.1,
+     "part": "W05_HubBright",
+     "cell": 0.03,
+     "script_target": 1500,
+     "target": 1500,
+     "overrides": null
+    }
+   ],
+   "health": {
+    "verts": 7174,
+    "faces": 14348,
+    "tris": 14348,
+    "bbox_uu": [
+     [
+      -13.0,
+      -5.3,
+      -13.0
+     ],
+     [
+      13.0,
+      5.3,
+      13.0
+     ]
+    ],
+    "open_shell_allowed": false,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "loose_edges": 0,
+    "loose_verts": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "sliver_pct": 0.0,
+    "needle_faces_lt1deg": 0,
+    "needle_pct": 0.0,
+    "min_angle_deg_p01": 12.452,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "shells": 3,
+    "closed_shells": 3,
+    "inside_out_shells": 0,
+    "custom_normals": true,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "min_face_area_uu2": 0.012526,
+    "spike_notch_vertices": 322,
+    "spike_notch_hidden": 61,
+    "spike_notch_by_test": {
+     "normal_spike": 0,
+     "fold_120": 5,
+     "broken_crease": 321
+    },
+    "authored_crease_edges": 0,
+    "allow": {
+     "file": null,
+     "split_normals_authored": false,
+     "zones": []
+    },
+    "max_vertex_normal_dev_deg": 48.78,
+    "max_unauthored_dihedral_deg": 128.48,
+    "concave_patches": 3,
+    "regions": {
+     "spike_notch_vertices": [
+      {
+       "count": 97,
+       "zone": "mid / centre / mid-height",
+       "center_uu": [
+        -3.48,
+        0.0,
+        1.8
+       ],
+       "bbox_min_uu": [
+        -12.78,
+        -5.3,
+        -6.16
+       ],
+       "bbox_max_uu": [
+        5.83,
+        5.3,
+        9.76
+       ],
+       "tests": [
+        "fold_120",
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 36.2,
+       "max_dihedral_deg": 122.9
+      },
+      {
+       "count": 58,
+       "zone": "front / centre / top",
+       "center_uu": [
+        6.54,
+        -0.86,
+        4.87
+       ],
+       "bbox_min_uu": [
+        0.12,
+        -5.0,
+        -2.99
+       ],
+       "bbox_max_uu": [
+        12.96,
+        3.28,
+        12.73
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 37.7,
+       "max_dihedral_deg": 110.3
+      },
+      {
+       "count": 49,
+       "zone": "mid / centre / low",
+       "center_uu": [
+        -2.74,
+        0.0,
+        -6.86
+       ],
+       "bbox_min_uu": [
+        -11.19,
+        -5.3,
+        -11.74
+       ],
+       "bbox_max_uu": [
+        5.71,
+        5.3,
+        -1.99
+       ],
+       "tests": [
+        "fold_120",
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 38.0,
+       "max_dihedral_deg": 128.5
+      },
+      {
+       "count": 35,
+       "zone": "mid / left(+Y) / low",
+       "center_uu": [
+        5.1,
+        2.31,
+        -8.71
+       ],
+       "bbox_min_uu": [
+        -1.2,
+        -0.68,
+        -12.75
+       ],
+       "bbox_max_uu": [
+        11.39,
+        5.3,
+        -4.68
+       ],
+       "tests": [
+        "fold_120",
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 29.6,
+       "max_dihedral_deg": 120.1
+      },
+      {
+       "count": 30,
+       "zone": "mid / centre / top",
+       "center_uu": [
+        -1.91,
+        -0.13,
+        10.87
+       ],
+       "bbox_min_uu": [
+        -5.82,
+        -5.3,
+        9.21
+       ],
+       "bbox_max_uu": [
+        1.99,
+        5.03,
+        12.52
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 33.6,
+       "max_dihedral_deg": 110.3
+      },
+      {
+       "count": 14,
+       "zone": "front / left(+Y) / mid-height",
+       "center_uu": [
+        10.66,
+        4.46,
+        1.76
+       ],
+       "bbox_min_uu": [
+        9.37,
+        3.62,
+        -2.39
+       ],
+       "bbox_max_uu": [
+        11.95,
+        5.3,
+        5.91
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 25.0,
+       "max_dihedral_deg": 107.4
+      },
+      {
+       "count": 7,
+       "zone": "front / right(-Y) / top",
+       "center_uu": [
+        6.93,
+        -4.72,
+        7.42
+       ],
+       "bbox_min_uu": [
+        6.01,
+        -5.3,
+        6.09
+       ],
+       "bbox_max_uu": [
+        7.86,
+        -4.15,
+        8.75
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 35.7,
+       "max_dihedral_deg": 108.0
+      },
+      {
+       "count": 6,
+       "zone": "mid / left(+Y) / top",
+       "center_uu": [
+        2.84,
+        4.61,
+        10.82
+       ],
+       "bbox_min_uu": [
+        2.01,
+        4.22,
+        9.7
+       ],
+       "bbox_max_uu": [
+        3.67,
+        5.0,
+        11.94
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 28.0,
+       "max_dihedral_deg": 102.3
+      },
+      {
+       "count": 5,
+       "zone": "rear / right(-Y) / top",
+       "center_uu": [
+        -6.56,
+        -4.35,
+        9.68
+       ],
+       "bbox_min_uu": [
+        -7.42,
+        -5.0,
+        8.38
+       ],
+       "bbox_max_uu": [
+        -5.71,
+        -3.69,
+        10.98
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 24.9,
+       "max_dihedral_deg": 85.7
+      },
+      {
+       "count": 5,
+       "zone": "mid / left(+Y) / mid-height",
+       "center_uu": [
+        5.71,
+        2.81,
+        1.33
+       ],
+       "bbox_min_uu": [
+        4.87,
+        2.14,
+        0.18
+       ],
+       "bbox_max_uu": [
+        6.54,
+        3.49,
+        2.48
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 20.7,
+       "max_dihedral_deg": 103.1
+      },
+      {
+       "count": 4,
+       "zone": "mid / right(-Y) / mid-height",
+       "center_uu": [
+        0.45,
+        -4.22,
+        -0.1
+       ],
+       "bbox_min_uu": [
+        -0.13,
+        -4.39,
+        -1.09
+       ],
+       "bbox_max_uu": [
+        1.02,
+        -4.05,
+        0.89
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 21.8,
+       "max_dihedral_deg": 86.3
+      },
+      {
+       "count": 4,
+       "zone": "front / right(-Y) / mid-height",
+       "center_uu": [
+        9.27,
+        -4.97,
+        -4.19
+       ],
+       "bbox_min_uu": [
+        8.45,
+        -5.3,
+        -5.9
+       ],
+       "bbox_max_uu": [
+        10.1,
+        -4.65,
+        -2.47
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 19.2,
+       "max_dihedral_deg": 81.1
+      }
+     ],
+     "spike_notch_hidden": [
+      {
+       "count": 35,
+       "zone": "mid / centre / low",
+       "center_uu": [
+        -1.14,
+        -0.56,
+        -10.44
+       ],
+       "bbox_min_uu": [
+        -8.77,
+        -4.29,
+        -13.0
+       ],
+       "bbox_max_uu": [
+        6.49,
+        3.16,
+        -7.87
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 47.1,
+       "max_dihedral_deg": 107.5
+      },
+      {
+       "count": 5,
+       "zone": "front / right(-Y) / low",
+       "center_uu": [
+        9.9,
+        -1.87,
+        -6.81
+       ],
+       "bbox_min_uu": [
+        8.94,
+        -4.02,
+        -7.96
+       ],
+       "bbox_max_uu": [
+        10.86,
+        0.28,
+        -5.65
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 18.9,
+       "max_dihedral_deg": 111.3
+      },
+      {
+       "count": 3,
+       "zone": "mid / left(+Y) / mid-height",
+       "center_uu": [
+        -3.86,
+        1.17,
+        2.96
+       ],
+       "bbox_min_uu": [
+        -4.14,
+        0.9,
+        2.67
+       ],
+       "bbox_max_uu": [
+        -3.57,
+        1.44,
+        3.26
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 27.2,
+       "max_dihedral_deg": 92.3
+      },
+      {
+       "count": 2,
+       "zone": "rear / right(-Y) / mid-height",
+       "center_uu": [
+        -11.91,
+        -3.25,
+        -0.44
+       ],
+       "bbox_min_uu": [
+        -12.41,
+        -3.31,
+        -0.56
+       ],
+       "bbox_max_uu": [
+        -11.41,
+        -3.19,
+        -0.32
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 20.9,
+       "max_dihedral_deg": 97.2
+      },
+      {
+       "count": 2,
+       "zone": "rear / centre / low",
+       "center_uu": [
+        -11.32,
+        -0.87,
+        -4.67
+       ],
+       "bbox_min_uu": [
+        -11.63,
+        -1.06,
+        -4.77
+       ],
+       "bbox_max_uu": [
+        -11.01,
+        -0.68,
+        -4.58
+       ],
+       "tests": [
+        "fold_120",
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 30.3,
+       "max_dihedral_deg": 122.9
+      },
+      {
+       "count": 2,
+       "zone": "rear / left(+Y) / low",
+       "center_uu": [
+        -10.49,
+        2.84,
+        -6.42
+       ],
+       "bbox_min_uu": [
+        -11.08,
+        2.68,
+        -6.65
+       ],
+       "bbox_max_uu": [
+        -9.9,
+        3.0,
+        -6.19
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 17.1,
+       "max_dihedral_deg": 80.8
+      },
+      {
+       "count": 2,
+       "zone": "rear / left(+Y) / mid-height",
+       "center_uu": [
+        -7.53,
+        3.36,
+        2.27
+       ],
+       "bbox_min_uu": [
+        -7.59,
+        3.16,
+        2.2
+       ],
+       "bbox_max_uu": [
+        -7.47,
+        3.56,
+        2.33
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 10.4,
+       "max_dihedral_deg": 98.6
+      },
+      {
+       "count": 2,
+       "zone": "front / left(+Y) / low",
+       "center_uu": [
+        11.05,
+        2.57,
+        -4.48
+       ],
+       "bbox_min_uu": [
+        10.84,
+        2.23,
+        -4.5
+       ],
+       "bbox_max_uu": [
+        11.27,
+        2.91,
+        -4.46
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 11.1,
+       "max_dihedral_deg": 84.9
+      },
+      {
+       "count": 1,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -9.03,
+        -2.84,
+        -7.98
+       ],
+       "bbox_min_uu": [
+        -9.03,
+        -2.84,
+        -7.98
+       ],
+       "bbox_max_uu": [
+        -9.03,
+        -2.84,
+        -7.98
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 17.1,
+       "max_dihedral_deg": 83.4
+      },
+      {
+       "count": 1,
+       "zone": "mid / centre / mid-height",
+       "center_uu": [
+        -3.38,
+        1.04,
+        -2.21
+       ],
+       "bbox_min_uu": [
+        -3.38,
+        1.04,
+        -2.21
+       ],
+       "bbox_max_uu": [
+        -3.38,
+        1.04,
+        -2.21
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 8.8,
+       "max_dihedral_deg": 77.1
+      },
+      {
+       "count": 1,
+       "zone": "mid / left(+Y) / low",
+       "center_uu": [
+        0.4,
+        4.47,
+        -10.44
+       ],
+       "bbox_min_uu": [
+        0.4,
+        4.47,
+        -10.44
+       ],
+       "bbox_max_uu": [
+        0.4,
+        4.47,
+        -10.44
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 28.2,
+       "max_dihedral_deg": 78.6
+      },
+      {
+       "count": 1,
+       "zone": "mid / left(+Y) / mid-height",
+       "center_uu": [
+        0.18,
+        3.12,
+        -2.59
+       ],
+       "bbox_min_uu": [
+        0.18,
+        3.12,
+        -2.59
+       ],
+       "bbox_max_uu": [
+        0.18,
+        3.12,
+        -2.59
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 16.3,
+       "max_dihedral_deg": 81.5
+      }
+     ],
+     "concave_patches": [
+      {
+       "count": 19,
+       "zone": "mid / right(-Y) / mid-height",
+       "center_uu": [
+        0.0,
+        -3.09,
+        -0.1
+       ],
+       "bbox_min_uu": [
+        -0.9,
+        -4.39,
+        -1.09
+       ],
+       "bbox_max_uu": [
+        0.9,
+        -1.8,
+        0.89
+       ],
+       "length_uu": 2.92,
+       "width_uu": 1.91,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.52,
+       "convex_ring_frac": 0.96
+      },
+      {
+       "count": 6,
+       "zone": "rear / left(+Y) / low",
+       "center_uu": [
+        -5.99,
+        4.04,
+        -9.33
+       ],
+       "bbox_min_uu": [
+        -6.38,
+        3.08,
+        -10.42
+       ],
+       "bbox_max_uu": [
+        -5.6,
+        5.0,
+        -8.23
+       ],
+       "length_uu": 2.95,
+       "width_uu": 0.66,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.28,
+       "convex_ring_frac": 0.83
+      },
+      {
+       "count": 3,
+       "zone": "mid / left(+Y) / low",
+       "center_uu": [
+        -2.32,
+        4.28,
+        -10.29
+       ],
+       "bbox_min_uu": [
+        -2.52,
+        3.96,
+        -10.48
+       ],
+       "bbox_max_uu": [
+        -2.13,
+        4.61,
+        -10.09
+       ],
+       "length_uu": 0.63,
+       "width_uu": 0.58,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.9,
+       "convex_ring_frac": 0.83
+      }
+     ]
+    },
+    "gate": "FAIL",
+    "failures": [
+     "spike_notch_vertices = 322 > 0"
+    ]
+   }
+  }
+ }
+}

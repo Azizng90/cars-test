@@ -1,0 +1,226 @@
+{
+ "casting": "Wheel_W05_Steel",
+ "build_script": "SourceArt\\Blender\\Wheel_W05_Steel\\build_Wheel_W05_Steel.py",
+ "build_script_sha256": "a0f974cff115b6f5ba1ef3905aa54e6e7f7d56c2ba2ee0049e6aa51224de520c",
+ "build_script_mtime": "Tue Oct 20 13:08:05 2026",
+ "exporter": "clean-v1 (16 Oct 2026)",
+ "mode": "production",
+ "written": "2026-10-20 16:39:43",
+ "complete": true,
+ "error": null,
+ "thresholds": {
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "edges_with_3plus_faces": 0,
+  "degenerate_faces": 0,
+  "near_duplicate_verts": 0,
+  "sliver_pct": 0.5,
+  "needle_pct": 0.5,
+  "flipped_winding_edges": 0,
+  "inside_out_shells": 0,
+  "backfacing_normal_corners": 0,
+  "loose_verts": 0,
+  "loose_edges": 0,
+  "spike_notch_vertices": 0
+ },
+ "budget": {
+  "W05_Tire": 70000,
+  "W05_Hub": 14000,
+  "W05_HubBright": 2500
+ },
+ "normals": "authored",
+ "pass": true,
+ "units": "uu, casting Blender frame (+X front, +Y left, +Z up); 1 uu = 0.01 Blender m",
+ "parts": {
+  "SM_Wheel_W05_Steel": {
+   "gate": "PASS",
+   "failures": [],
+   "summary": {
+    "tris": 82502,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "needle_faces_lt1deg": 0,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "inside_out_shells": 0,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 2,
+    "concave_patches": 0
+   },
+   "sdf_parts": [
+    {
+     "raw": 858752,
+     "decimated": 70052,
+     "final": 66724,
+     "bad_after_decimate": 9,
+     "flips": 6842,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 11.6,
+     "t_dec": 78.8,
+     "t_clean": 9.3,
+     "part": "W05_Tire",
+     "cell": 0.08,
+     "script_target": 9000,
+     "target": 70000,
+     "overrides": null
+    },
+    {
+     "raw": 586668,
+     "decimated": 14046,
+     "final": 13988,
+     "bad_after_decimate": 0,
+     "flips": 1689,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 9.3,
+     "t_dec": 60.3,
+     "t_clean": 1.3,
+     "part": "W05_Hub",
+     "cell": 0.06,
+     "script_target": 4000,
+     "target": 14000,
+     "overrides": null
+    },
+    {
+     "raw": 139504,
+     "decimated": 2504,
+     "final": 1790,
+     "bad_after_decimate": 37,
+     "flips": 112,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 1.8,
+     "t_dec": 10.2,
+     "t_clean": 0.3,
+     "part": "W05_HubBright",
+     "cell": 0.03,
+     "script_target": 1500,
+     "target": 2500,
+     "overrides": null
+    }
+   ],
+   "health": {
+    "verts": 41253,
+    "faces": 82502,
+    "tris": 82502,
+    "bbox_uu": [
+     [
+      -13.0,
+      -5.03,
+      -13.0
+     ],
+     [
+      13.0,
+      5.03,
+      13.0
+     ]
+    ],
+    "open_shell_allowed": false,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "loose_edges": 0,
+    "loose_verts": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "sliver_pct": 0.0,
+    "needle_faces_lt1deg": 0,
+    "needle_pct": 0.0,
+    "min_angle_deg_p01": 13.743,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "shells": 3,
+    "closed_shells": 3,
+    "inside_out_shells": 0,
+    "custom_normals": true,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "min_face_area_uu2": 0.012502,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 2,
+    "spike_notch_by_test": {
+     "normal_spike": 0,
+     "fold_120": 0,
+     "broken_crease": 0
+    },
+    "authored_crease_edges": 0,
+    "allow": {
+     "file": null,
+     "split_normals_authored": false,
+     "zones": []
+    },
+    "max_vertex_normal_dev_deg": 16.36,
+    "max_unauthored_dihedral_deg": 80.73,
+    "concave_patches": 0,
+    "regions": {
+     "spike_notch_hidden": [
+      {
+       "count": 2,
+       "zone": "mid / left(+Y) / mid-height",
+       "center_uu": [
+        -1.25,
+        3.37,
+        1.05
+       ],
+       "bbox_min_uu": [
+        -1.27,
+        3.12,
+        1.0
+       ],
+       "bbox_max_uu": [
+        -1.23,
+        3.61,
+        1.1
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 5.2,
+       "max_dihedral_deg": 80.7
+      }
+     ]
+    },
+    "gate": "PASS",
+    "failures": []
+   }
+  }
+ }
+}

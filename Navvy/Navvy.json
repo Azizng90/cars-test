@@ -1,0 +1,168 @@
+{
+  "casting": "Navvy",
+  "class": "Lifted",
+  "brand": "KESTREL MOTOR WORKS",
+  "units": "uu, UE axes (X fwd, Y right, Z up); origin at ground level centred between the axles",
+  "length": 118,
+  "width": 86,
+  "height": 44,
+  "hitbox": {
+    "center": [
+      0,
+      0,
+      22
+    ],
+    "extent": [
+      59,
+      43,
+      22
+    ]
+  },
+  "wheel_design": "W03_Lug",
+  "wheel_radius": 14.0,
+  "wheel_width": 14.0,
+  "wheelbase": 66.0,
+  "track": 72.0,
+  "wheels": {
+    "FL": [
+      33.0,
+      -36.0,
+      14.0
+    ],
+    "FR": [
+      33.0,
+      36.0,
+      14.0
+    ],
+    "RL": [
+      -33.0,
+      -36.0,
+      14.0
+    ],
+    "RR": [
+      -33.0,
+      36.0,
+      14.0
+    ]
+  },
+  "wheel_mesh_note": "SM_Wheel_W03_Lug is authored as a left wheel (hub face to UE -Y); yaw right wheels 180 deg.",
+  "parts": {
+    "Body": "SM_Navvy_Body",
+    "Base": "SM_Navvy_Base",
+    "Windows": "SM_Navvy_Windows",
+    "Interior": "SM_Navvy_Interior",
+    "Blade": "SM_Navvy_Blade"
+  },
+  "feature": {
+    "type": "Blade",
+    "part": "SM_Navvy_Blade",
+    "hinge": [
+      -4.0,
+      -0.0,
+      32.0
+    ],
+    "hinge_axis": "Y (UE pitch)",
+    "mesh_origin": "SM_Navvy_Blade vertices are relative to the hinge: attach the blade component at 'hinge' with zero rotation; at pitch 0 it sits in its rest pose.",
+    "raise_range_deg": [
+      -1.4,
+      18.0
+    ],
+    "rest_deg": 0.0,
+    "sign": "UE FRotator pitch, positive raises the blade (cutting edge moves up and forward)",
+    "at_min": "cutting edge touches the ground (z ~0)",
+    "rest_cutting_edge_z": 1.55,
+    "blade_width": 86.0,
+    "blade_front_x": 78.37,
+    "blade_adds_at_front": 18.87,
+    "push_face": "concave moldboard, front x 70.9-78.4, z 1.5-25.3 at rest"
+  },
+  "slots": {
+    "Body": [
+      "Paint",
+      "Chrome",
+      "Lamp",
+      "Zamac"
+    ],
+    "Base": [
+      "Base"
+    ],
+    "Windows": [
+      "Glass"
+    ],
+    "Interior": [
+      "Interior"
+    ],
+    "Blade": [
+      "Paint",
+      "Zamac"
+    ]
+  },
+  "lamp_tint": "Body vertex colour 'Col' on Lamp faces: white = clear (head/work lamps), red = tail lamps, amber = roof beacon. Multiply in the Lamp material.",
+  "axles": "steel axles are part of SM_Navvy_Body (slot Zamac) at x = +/-33, z = 14, |y| <= 41.8, radius 1.0; the two rivet heads under the base are also Body/Zamac (bare metal).",
+  "uv": {
+    "UV0": "smart unwrap per part, non-overlapping (wear, grain, chips)",
+    "UV1_body_windows": "tampo layout from a fixed box x[-64,64] y[-44,44] z[0,50] uu (Blender axes): left side U 0-0.5 (front at U 0, as seen from the left), right side U 0.5-1 (front at U 1), sides V 0-0.64 by height; top strip V 0.68-1 (U rear->front, V right->left seen from above); front/rear/underside faces in the blank band V 0.64-0.68",
+    "UV1_blade": "front projection of the push face U 0-1 across the width as seen from the front, V 0-0.6 by height; arm sides V 0.62-1 (left U 0-0.5, right U 0.5-1)",
+    "UV1_base": "projection from below, readable from below with the front to the right: U rear->front, V left->right; moulded text area is the plain panel x[-24.2,22.2] y[-13.7,13.7] uu inside the raised border (base text decal goes there)",
+    "UV1_interior": "copy of UV0"
+  },
+  "measured_bbox_uu_blender_axes": {
+    "Body": [
+      -62.8,
+      57.5,
+      -43.5,
+      43.5,
+      7.35,
+      50.25
+    ],
+    "Base": [
+      -56.0,
+      55.0,
+      -27.0,
+      27.0,
+      6.4,
+      20.5
+    ],
+    "Windows": [
+      -13.5,
+      9.4,
+      -18.6,
+      18.6,
+      25.6,
+      41.2
+    ],
+    "Interior": [
+      -13.06,
+      8.7,
+      -17.9,
+      17.9,
+      25.3,
+      36.11
+    ],
+    "Blade": [
+      -8.5,
+      78.37,
+      -43.0,
+      43.0,
+      1.55,
+      36.5
+    ],
+    "Wheel": [
+      -13.94,
+      13.94,
+      -7.15,
+      7.15,
+      -13.97,
+      13.97
+    ]
+  },
+  "tris": {
+    "Body": 35152,
+    "Base": 11296,
+    "Windows": 1152,
+    "Interior": 2392,
+    "Blade": 11552,
+    "Wheel": 5864
+  },
+  "source": "SourceArt/Blender/Navvy/build_navvy.py"
+}

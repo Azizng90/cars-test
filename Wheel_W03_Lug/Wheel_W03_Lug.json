@@ -1,0 +1,24 @@
+{
+  "wheel_design": "W03_Lug",
+  "mesh": "SM_Wheel_W03_Lug",
+  "description": "Chunky off-road lug tyre, black, with a deep yellow dish hub (6 nuts, centre boss, axle hole).",
+  "units": "uu, UE axes (X fwd, Y right, Z up)",
+  "radius": 14.0,
+  "width": 14.0,
+  "hub_radius": 8.95,
+  "origin": "wheel centre",
+  "axle_axis": "Y",
+  "outer_face": "Blender +Y = UE -Y, i.e. authored as a LEFT wheel. Right wheels: yaw 180 deg (tread is 180-deg symmetric: 15 staggered lugs per row).",
+  "slots": [
+    "Tire",
+    "Hub"
+  ],
+  "tris": 5864,
+  "uv": {
+    "UV0": "smart unwrap (wear/grain)",
+    "UV1": "planar side projection X/Z over the wheel diameter (sidewall decals)"
+  },
+  "used_by": [
+    "Navvy"
+  ]
+}

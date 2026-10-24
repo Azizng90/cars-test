@@ -1,0 +1,2503 @@
+{
+ "casting": "Vortex",
+ "build_script": "SourceArt\\Blender\\Vortex\\build_Vortex.py",
+ "build_script_sha256": "b497e3302596eb65baa36db7b1ef5d4a41e3a5be2b324d20758143f27fca8c58",
+ "build_script_mtime": "Sat Oct 17 15:08:08 2026",
+ "exporter": "clean-v1 (16 Oct 2026)",
+ "mode": "production",
+ "written": "2026-10-17 15:23:30",
+ "complete": true,
+ "error": null,
+ "thresholds": {
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "edges_with_3plus_faces": 0,
+  "degenerate_faces": 0,
+  "near_duplicate_verts": 0,
+  "sliver_pct": 0.5,
+  "needle_pct": 0.5,
+  "flipped_winding_edges": 0,
+  "inside_out_shells": 0,
+  "backfacing_normal_corners": 0,
+  "loose_verts": 0,
+  "loose_edges": 0,
+  "spike_notch_vertices": 0
+ },
+ "budget": {
+  "Vortex_Body": 212000,
+  "Vortex_Base": 150000,
+  "Vortex_Interior": 60000,
+  "Vortex_Windows": 24000,
+  "SM_Vortex_Body (whole part, rule 16 Nanite cap)": 300000
+ },
+ "normals": "authored",
+ "pass": true,
+ "units": "uu, casting Blender frame (+X front, +Y left, +Z up); 1 uu = 0.01 Blender m",
+ "parts": {
+  "SM_Vortex_Body": {
+   "gate": "PASS",
+   "failures": [],
+   "summary": {
+    "tris": 285900,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "needle_faces_lt1deg": 0,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "inside_out_shells": 0,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 2,
+    "concave_patches": 35
+   },
+   "sdf_parts": [
+    {
+     "raw": 2538360,
+     "decimated": 212200,
+     "final": 212030,
+     "bad_after_decimate": 0,
+     "flips": 30601,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0205,
+     "t_mesh": 122.6,
+     "t_dec": 297.4,
+     "t_clean": 37.7,
+     "part": "Vortex_Body",
+     "cell": 0.17,
+     "script_target": 70000,
+     "target": 212000,
+     "overrides": null
+    },
+    {
+     "raw": 46096,
+     "decimated": 10010,
+     "final": 3100,
+     "bad_after_decimate": 3988,
+     "flips": 1221,
+     "bad_left": 166,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 0.3,
+     "t_dec": 1.6,
+     "t_clean": 1.2,
+     "part": "Exhaust",
+     "cell": 0.06,
+     "script_target": 4000,
+     "target": 10000,
+     "overrides": null
+    },
+    {
+     "raw": 21468,
+     "decimated": 2256,
+     "final": 1296,
+     "bad_after_decimate": 123,
+     "flips": 217,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 0.2,
+     "t_dec": 0.9,
+     "t_clean": 0.3,
+     "part": "LensF",
+     "cell": 0.06,
+     "script_target": 900,
+     "target": 2250,
+     "overrides": null
+    },
+    {
+     "raw": 14196,
+     "decimated": 652,
+     "final": 508,
+     "bad_after_decimate": 22,
+     "flips": 42,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 0.1,
+     "t_dec": 1.2,
+     "t_clean": 0.2,
+     "part": "AxleHead",
+     "cell": 0.05,
+     "script_target": 260,
+     "target": 650,
+     "overrides": null
+    },
+    {
+     "raw": 14196,
+     "decimated": 652,
+     "final": 510,
+     "bad_after_decimate": 22,
+     "flips": 46,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 0.1,
+     "t_dec": 0.9,
+     "t_clean": 0.1,
+     "part": "AxleHead",
+     "cell": 0.05,
+     "script_target": 260,
+     "target": 650,
+     "overrides": null
+    },
+    {
+     "raw": 14196,
+     "decimated": 652,
+     "final": 500,
+     "bad_after_decimate": 20,
+     "flips": 46,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 0.1,
+     "t_dec": 0.8,
+     "t_clean": 0.1,
+     "part": "AxleHead",
+     "cell": 0.05,
+     "script_target": 260,
+     "target": 650,
+     "overrides": null
+    },
+    {
+     "raw": 14196,
+     "decimated": 652,
+     "final": 500,
+     "bad_after_decimate": 30,
+     "flips": 51,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 0.1,
+     "t_dec": 0.8,
+     "t_clean": 0.1,
+     "part": "AxleHead",
+     "cell": 0.05,
+     "script_target": 260,
+     "target": 650,
+     "overrides": null
+    },
+    {
+     "raw": 30956,
+     "decimated": 1506,
+     "final": 1226,
+     "bad_after_decimate": 10,
+     "flips": 184,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 0.2,
+     "t_dec": 1.5,
+     "t_clean": 0.2,
+     "part": "Rivet",
+     "cell": 0.05,
+     "script_target": 600,
+     "target": 1500,
+     "overrides": null
+    },
+    {
+     "raw": 30956,
+     "decimated": 1506,
+     "final": 1292,
+     "bad_after_decimate": 2,
+     "flips": 170,
+     "bad_left": 2,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 0.3,
+     "t_dec": 1.5,
+     "t_clean": 0.1,
+     "part": "Rivet",
+     "cell": 0.05,
+     "script_target": 600,
+     "target": 1500,
+     "overrides": null
+    }
+   ],
+   "health": {
+    "verts": 142970,
+    "faces": 285900,
+    "tris": 285900,
+    "bbox_uu": [
+     [
+      -57.92,
+      -40.47,
+      2.84
+     ],
+     [
+      60.85,
+      40.47,
+      29.64
+     ]
+    ],
+    "open_shell_allowed": false,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "loose_edges": 0,
+    "loose_verts": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "sliver_pct": 0.0,
+    "needle_faces_lt1deg": 0,
+    "needle_pct": 0.0,
+    "min_angle_deg_p01": 8.662,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "shells": 13,
+    "closed_shells": 13,
+    "inside_out_shells": 0,
+    "custom_normals": true,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "min_face_area_uu2": 0.010217,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 2,
+    "spike_notch_by_test": {
+     "normal_spike": 0,
+     "fold_120": 0,
+     "broken_crease": 0
+    },
+    "authored_crease_edges": 0,
+    "allow": {
+     "file": null,
+     "split_normals_authored": false,
+     "zones": []
+    },
+    "max_vertex_normal_dev_deg": 31.34,
+    "max_unauthored_dihedral_deg": 90.0,
+    "concave_patches": 35,
+    "regions": {
+     "spike_notch_hidden": [
+      {
+       "count": 1,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        -21.58,
+        -16.96,
+        24.59
+       ],
+       "bbox_min_uu": [
+        -21.58,
+        -16.96,
+        24.59
+       ],
+       "bbox_max_uu": [
+        -21.58,
+        -16.96,
+        24.59
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 4.9,
+       "max_dihedral_deg": 79.9
+      },
+      {
+       "count": 1,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        -18.81,
+        -16.95,
+        24.92
+       ],
+       "bbox_min_uu": [
+        -18.81,
+        -16.95,
+        24.92
+       ],
+       "bbox_max_uu": [
+        -18.81,
+        -16.95,
+        24.92
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 8.7,
+       "max_dihedral_deg": 75.9
+      }
+     ],
+     "concave_patches": [
+      {
+       "count": 344,
+       "zone": "mid / centre / low",
+       "center_uu": [
+        22.59,
+        -3.46,
+        10.19
+       ],
+       "bbox_min_uu": [
+        22.18,
+        -24.52,
+        9.78
+       ],
+       "bbox_max_uu": [
+        23.0,
+        17.6,
+        10.6
+       ],
+       "length_uu": 42.12,
+       "width_uu": 1.16,
+       "kind": "dimple",
+       "min_concave_radius_uu": 0.26,
+       "convex_ring_frac": 0.96
+      },
+      {
+       "count": 183,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        10.08,
+        -23.15,
+        25.63
+       ],
+       "bbox_min_uu": [
+        8.42,
+        -27.95,
+        23.43
+       ],
+       "bbox_max_uu": [
+        11.74,
+        -18.35,
+        27.83
+       ],
+       "length_uu": 10.38,
+       "width_uu": 3.94,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.47,
+       "convex_ring_frac": 0.8
+      },
+      {
+       "count": 166,
+       "zone": "front / right(-Y) / low",
+       "center_uu": [
+        53.01,
+        -26.67,
+        9.89
+       ],
+       "bbox_min_uu": [
+        46.11,
+        -38.55,
+        8.0
+       ],
+       "bbox_max_uu": [
+        59.91,
+        -14.79,
+        11.79
+       ],
+       "length_uu": 27.36,
+       "width_uu": 5.99,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.29,
+       "convex_ring_frac": 0.96
+      },
+      {
+       "count": 141,
+       "zone": "mid / left(+Y) / mid-height",
+       "center_uu": [
+        21.37,
+        29.21,
+        12.32
+       ],
+       "bbox_min_uu": [
+        18.04,
+        27.77,
+        7.79
+       ],
+       "bbox_max_uu": [
+        24.71,
+        30.65,
+        16.86
+       ],
+       "length_uu": 9.25,
+       "width_uu": 5.03,
+       "kind": "dimple",
+       "min_concave_radius_uu": 0.4,
+       "convex_ring_frac": 0.86
+      },
+      {
+       "count": 111,
+       "zone": "mid / right(-Y) / low",
+       "center_uu": [
+        18.44,
+        -29.33,
+        10.39
+       ],
+       "bbox_min_uu": [
+        13.54,
+        -30.65,
+        7.82
+       ],
+       "bbox_max_uu": [
+        23.35,
+        -28.01,
+        12.96
+       ],
+       "length_uu": 9.76,
+       "width_uu": 5.18,
+       "kind": "dimple",
+       "min_concave_radius_uu": 0.25,
+       "convex_ring_frac": 0.87
+      },
+      {
+       "count": 109,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        16.96,
+        -29.39,
+        23.47
+       ],
+       "bbox_min_uu": [
+        14.2,
+        -31.17,
+        22.81
+       ],
+       "bbox_max_uu": [
+        19.72,
+        -27.62,
+        24.13
+       ],
+       "length_uu": 5.52,
+       "width_uu": 3.61,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.26,
+       "convex_ring_frac": 0.7
+      },
+      {
+       "count": 99,
+       "zone": "mid / left(+Y) / top",
+       "center_uu": [
+        -10.07,
+        26.64,
+        25.05
+       ],
+       "bbox_min_uu": [
+        -10.98,
+        25.08,
+        23.77
+       ],
+       "bbox_max_uu": [
+        -9.15,
+        28.21,
+        26.32
+       ],
+       "length_uu": 3.29,
+       "width_uu": 1.86,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.96,
+       "convex_ring_frac": 0.67
+      },
+      {
+       "count": 98,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        -9.0,
+        -26.43,
+        25.13
+       ],
+       "bbox_min_uu": [
+        -10.75,
+        -28.1,
+        23.56
+       ],
+       "bbox_max_uu": [
+        -7.25,
+        -24.77,
+        26.7
+       ],
+       "length_uu": 4.31,
+       "width_uu": 3.04,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.03,
+       "convex_ring_frac": 0.69
+      },
+      {
+       "count": 67,
+       "zone": "rear / centre / low",
+       "center_uu": [
+        -57.34,
+        -0.04,
+        4.59
+       ],
+       "bbox_min_uu": [
+        -57.83,
+        -2.15,
+        4.05
+       ],
+       "bbox_max_uu": [
+        -56.84,
+        2.07,
+        5.13
+       ],
+       "length_uu": 4.22,
+       "width_uu": 1.18,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.28,
+       "convex_ring_frac": 0.98
+      },
+      {
+       "count": 53,
+       "zone": "rear / left(+Y) / low",
+       "center_uu": [
+        -45.47,
+        24.45,
+        10.27
+       ],
+       "bbox_min_uu": [
+        -46.18,
+        23.82,
+        7.76
+       ],
+       "bbox_max_uu": [
+        -44.77,
+        25.07,
+        12.77
+       ],
+       "length_uu": 5.05,
+       "width_uu": 1.66,
+       "kind": "dimple",
+       "min_concave_radius_uu": 0.63,
+       "convex_ring_frac": 0.74
+      },
+      {
+       "count": 44,
+       "zone": "mid / right(-Y) / low",
+       "center_uu": [
+        -5.05,
+        -28.3,
+        10.2
+       ],
+       "bbox_min_uu": [
+        -9.54,
+        -28.6,
+        9.78
+       ],
+       "bbox_max_uu": [
+        -0.56,
+        -28.0,
+        10.63
+       ],
+       "length_uu": 8.98,
+       "width_uu": 1.08,
+       "kind": "dimple",
+       "min_concave_radius_uu": 0.27,
+       "convex_ring_frac": 0.96
+      },
+      {
+       "count": 36,
+       "zone": "mid / left(+Y) / top",
+       "center_uu": [
+        19.58,
+        20.48,
+        23.17
+       ],
+       "bbox_min_uu": [
+        18.11,
+        19.29,
+        22.39
+       ],
+       "bbox_max_uu": [
+        21.04,
+        21.67,
+        23.94
+       ],
+       "length_uu": 3.71,
+       "width_uu": 1.13,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.42,
+       "convex_ring_frac": 0.83
+      },
+      {
+       "count": 29,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        19.91,
+        -20.65,
+        23.09
+       ],
+       "bbox_min_uu": [
+        18.86,
+        -21.63,
+        22.41
+       ],
+       "bbox_max_uu": [
+        20.96,
+        -19.67,
+        23.77
+       ],
+       "length_uu": 2.94,
+       "width_uu": 1.13,
+       "kind": "saddle",
+       "min_concave_radius_uu": 2.07,
+       "convex_ring_frac": 0.8
+      },
+      {
+       "count": 26,
+       "zone": "rear / left(+Y) / low",
+       "center_uu": [
+        -28.86,
+        24.26,
+        9.83
+       ],
+       "bbox_min_uu": [
+        -29.51,
+        23.89,
+        7.91
+       ],
+       "bbox_max_uu": [
+        -28.21,
+        24.63,
+        11.75
+       ],
+       "length_uu": 3.87,
+       "width_uu": 1.47,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.2,
+       "convex_ring_frac": 0.82
+      },
+      {
+       "count": 26,
+       "zone": "front / right(-Y) / low",
+       "center_uu": [
+        45.57,
+        -29.88,
+        9.12
+       ],
+       "bbox_min_uu": [
+        45.09,
+        -30.53,
+        7.73
+       ],
+       "bbox_max_uu": [
+        46.05,
+        -29.22,
+        10.51
+       ],
+       "length_uu": 2.79,
+       "width_uu": 1.53,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.68,
+       "convex_ring_frac": 0.88
+      },
+      {
+       "count": 20,
+       "zone": "rear / right(-Y) / mid-height",
+       "center_uu": [
+        -56.11,
+        -21.31,
+        19.05
+       ],
+       "bbox_min_uu": [
+        -56.52,
+        -23.89,
+        17.27
+       ],
+       "bbox_max_uu": [
+        -55.7,
+        -18.73,
+        20.84
+       ],
+       "length_uu": 5.84,
+       "width_uu": 3.39,
+       "kind": "dimple",
+       "min_concave_radius_uu": 2.73,
+       "convex_ring_frac": 0.74
+      },
+      {
+       "count": 20,
+       "zone": "front / left(+Y) / low",
+       "center_uu": [
+        33.96,
+        29.28,
+        10.96
+       ],
+       "bbox_min_uu": [
+        32.31,
+        29.01,
+        10.55
+       ],
+       "bbox_max_uu": [
+        35.6,
+        29.56,
+        11.37
+       ],
+       "length_uu": 3.3,
+       "width_uu": 0.81,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.38,
+       "convex_ring_frac": 0.92
+      },
+      {
+       "count": 19,
+       "zone": "front / left(+Y) / low",
+       "center_uu": [
+        45.51,
+        29.89,
+        8.65
+       ],
+       "bbox_min_uu": [
+        44.97,
+        29.34,
+        7.86
+       ],
+       "bbox_max_uu": [
+        46.04,
+        30.44,
+        9.44
+       ],
+       "length_uu": 1.65,
+       "width_uu": 1.31,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.75,
+       "convex_ring_frac": 0.88
+      },
+      {
+       "count": 18,
+       "zone": "mid / right(-Y) / low",
+       "center_uu": [
+        -22.44,
+        -29.87,
+        8.8
+       ],
+       "bbox_min_uu": [
+        -22.9,
+        -30.32,
+        7.7
+       ],
+       "bbox_max_uu": [
+        -21.98,
+        -29.41,
+        9.9
+       ],
+       "length_uu": 2.25,
+       "width_uu": 1.16,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.45,
+       "convex_ring_frac": 0.88
+      },
+      {
+       "count": 14,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -52.52,
+        -30.15,
+        10.74
+       ],
+       "bbox_min_uu": [
+        -54.88,
+        -30.51,
+        10.32
+       ],
+       "bbox_max_uu": [
+        -50.16,
+        -29.8,
+        11.15
+       ],
+       "length_uu": 4.82,
+       "width_uu": 0.62,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.85,
+       "convex_ring_frac": 0.82
+      },
+      {
+       "count": 14,
+       "zone": "front / right(-Y) / low",
+       "center_uu": [
+        34.01,
+        -29.37,
+        10.96
+       ],
+       "bbox_min_uu": [
+        32.35,
+        -29.5,
+        10.67
+       ],
+       "bbox_max_uu": [
+        35.67,
+        -29.25,
+        11.25
+       ],
+       "length_uu": 3.31,
+       "width_uu": 0.62,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.45,
+       "convex_ring_frac": 0.93
+      },
+      {
+       "count": 13,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -45.48,
+        -23.95,
+        8.17
+       ],
+       "bbox_min_uu": [
+        -45.91,
+        -24.24,
+        7.8
+       ],
+       "bbox_max_uu": [
+        -45.05,
+        -23.67,
+        8.55
+       ],
+       "length_uu": 0.98,
+       "width_uu": 0.88,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.63,
+       "convex_ring_frac": 0.7
+      },
+      {
+       "count": 12,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -33.99,
+        -23.8,
+        10.91
+       ],
+       "bbox_min_uu": [
+        -35.64,
+        -23.91,
+        10.59
+       ],
+       "bbox_max_uu": [
+        -32.34,
+        -23.7,
+        11.24
+       ],
+       "length_uu": 3.3,
+       "width_uu": 0.69,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.6,
+       "convex_ring_frac": 0.91
+      },
+      {
+       "count": 12,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -28.78,
+        -24.05,
+        7.97
+       ],
+       "bbox_min_uu": [
+        -29.45,
+        -24.46,
+        7.71
+       ],
+       "bbox_max_uu": [
+        -28.12,
+        -23.63,
+        8.22
+       ],
+       "length_uu": 1.44,
+       "width_uu": 0.66,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.41,
+       "convex_ring_frac": 0.87
+      },
+      {
+       "count": 12,
+       "zone": "mid / left(+Y) / low",
+       "center_uu": [
+        -22.54,
+        29.76,
+        8.46
+       ],
+       "bbox_min_uu": [
+        -22.98,
+        29.5,
+        7.91
+       ],
+       "bbox_max_uu": [
+        -22.1,
+        30.02,
+        9.01
+       ],
+       "length_uu": 1.2,
+       "width_uu": 0.83,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.56,
+       "convex_ring_frac": 0.85
+      }
+     ]
+    },
+    "gate": "PASS",
+    "failures": []
+   }
+  },
+  "SM_Vortex_Base": {
+   "gate": "PASS",
+   "failures": [],
+   "summary": {
+    "tris": 146436,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "needle_faces_lt1deg": 0,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "inside_out_shells": 0,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 16,
+    "concave_patches": 34
+   },
+   "sdf_parts": [
+    {
+     "raw": 1518480,
+     "decimated": 150704,
+     "final": 146436,
+     "bad_after_decimate": 134,
+     "flips": 19934,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0007,
+     "t_mesh": 37.5,
+     "t_dec": 128.4,
+     "t_clean": 22.5,
+     "part": "Vortex_Base",
+     "cell": 0.15,
+     "script_target": 13000,
+     "target": 150000,
+     "overrides": null
+    }
+   ],
+   "health": {
+    "verts": 73220,
+    "faces": 146436,
+    "tris": 146436,
+    "bbox_uu": [
+     [
+      -54.4,
+      -36.45,
+      2.9
+     ],
+     [
+      59.75,
+      36.45,
+      8.8
+     ]
+    ],
+    "open_shell_allowed": false,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "loose_edges": 0,
+    "loose_verts": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "sliver_pct": 0.0,
+    "needle_faces_lt1deg": 0,
+    "needle_pct": 0.0,
+    "min_angle_deg_p01": 11.311,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "shells": 3,
+    "closed_shells": 3,
+    "inside_out_shells": 0,
+    "custom_normals": true,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "min_face_area_uu2": 0.012501,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 16,
+    "spike_notch_by_test": {
+     "normal_spike": 0,
+     "fold_120": 0,
+     "broken_crease": 0
+    },
+    "authored_crease_edges": 0,
+    "allow": {
+     "file": null,
+     "split_normals_authored": false,
+     "zones": []
+    },
+    "max_vertex_normal_dev_deg": 61.74,
+    "max_unauthored_dihedral_deg": 93.77,
+    "concave_patches": 34,
+    "regions": {
+     "spike_notch_hidden": [
+      {
+       "count": 4,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -31.22,
+        -7.45,
+        3.29
+       ],
+       "bbox_min_uu": [
+        -31.59,
+        -7.7,
+        3.15
+       ],
+       "bbox_max_uu": [
+        -30.84,
+        -7.2,
+        3.44
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 18.0,
+       "max_dihedral_deg": 77.3
+      },
+      {
+       "count": 3,
+       "zone": "mid / right(-Y) / low",
+       "center_uu": [
+        -13.96,
+        -10.81,
+        3.14
+       ],
+       "bbox_min_uu": [
+        -14.48,
+        -11.4,
+        3.1
+       ],
+       "bbox_max_uu": [
+        -13.44,
+        -10.23,
+        3.19
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 24.1,
+       "max_dihedral_deg": 93.8
+      },
+      {
+       "count": 3,
+       "zone": "mid / left(+Y) / low",
+       "center_uu": [
+        -13.95,
+        10.09,
+        3.47
+       ],
+       "bbox_min_uu": [
+        -14.82,
+        9.04,
+        3.16
+       ],
+       "bbox_max_uu": [
+        -13.09,
+        11.14,
+        3.78
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 17.3,
+       "max_dihedral_deg": 84.8
+      },
+      {
+       "count": 2,
+       "zone": "rear / left(+Y) / low",
+       "center_uu": [
+        -31.56,
+        7.38,
+        3.29
+       ],
+       "bbox_min_uu": [
+        -31.59,
+        7.32,
+        3.15
+       ],
+       "bbox_max_uu": [
+        -31.52,
+        7.43,
+        3.44
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 20.2,
+       "max_dihedral_deg": 81.4
+      },
+      {
+       "count": 1,
+       "zone": "mid / right(-Y) / low",
+       "center_uu": [
+        4.61,
+        -11.05,
+        3.21
+       ],
+       "bbox_min_uu": [
+        4.61,
+        -11.05,
+        3.21
+       ],
+       "bbox_max_uu": [
+        4.61,
+        -11.05,
+        3.21
+       ],
+       "tests": [
+        "normal_spike"
+       ],
+       "max_normal_dev_deg": 61.7,
+       "max_dihedral_deg": 3.5
+      },
+      {
+       "count": 1,
+       "zone": "mid / right(-Y) / low",
+       "center_uu": [
+        18.52,
+        -9.82,
+        3.16
+       ],
+       "bbox_min_uu": [
+        18.52,
+        -9.82,
+        3.16
+       ],
+       "bbox_max_uu": [
+        18.52,
+        -9.82,
+        3.16
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 20.4,
+       "max_dihedral_deg": 85.6
+      },
+      {
+       "count": 1,
+       "zone": "mid / left(+Y) / low",
+       "center_uu": [
+        18.52,
+        9.82,
+        3.16
+       ],
+       "bbox_min_uu": [
+        18.52,
+        9.82,
+        3.16
+       ],
+       "bbox_max_uu": [
+        18.52,
+        9.82,
+        3.16
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 22.1,
+       "max_dihedral_deg": 89.3
+      },
+      {
+       "count": 1,
+       "zone": "front / centre / low",
+       "center_uu": [
+        48.12,
+        -0.88,
+        3.0
+       ],
+       "bbox_min_uu": [
+        48.12,
+        -0.88,
+        3.0
+       ],
+       "bbox_max_uu": [
+        48.12,
+        -0.88,
+        3.0
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 4.6,
+       "max_dihedral_deg": 75.3
+      }
+     ],
+     "concave_patches": [
+      {
+       "count": 834,
+       "zone": "front / centre / mid-height",
+       "center_uu": [
+        58.55,
+        0.04,
+        5.55
+       ],
+       "bbox_min_uu": [
+        57.42,
+        -15.19,
+        4.43
+       ],
+       "bbox_max_uu": [
+        59.67,
+        15.28,
+        6.67
+       ],
+       "length_uu": 30.47,
+       "width_uu": 2.82,
+       "kind": "dimple",
+       "min_concave_radius_uu": 0.19,
+       "convex_ring_frac": 0.93
+      },
+      {
+       "count": 362,
+       "zone": "rear / centre / mid-height",
+       "center_uu": [
+        -44.99,
+        -0.01,
+        6.34
+       ],
+       "bbox_min_uu": [
+        -47.08,
+        -2.08,
+        3.93
+       ],
+       "bbox_max_uu": [
+        -42.9,
+        2.05,
+        8.76
+       ],
+       "length_uu": 5.02,
+       "width_uu": 4.88,
+       "kind": "dimple",
+       "min_concave_radius_uu": 1.62,
+       "convex_ring_frac": 0.84
+      },
+      {
+       "count": 341,
+       "zone": "front / centre / mid-height",
+       "center_uu": [
+        45.02,
+        -0.0,
+        6.46
+       ],
+       "bbox_min_uu": [
+        42.95,
+        -2.05,
+        4.2
+       ],
+       "bbox_max_uu": [
+        47.08,
+        2.05,
+        8.73
+       ],
+       "length_uu": 4.96,
+       "width_uu": 4.67,
+       "kind": "dimple",
+       "min_concave_radius_uu": 1.57,
+       "convex_ring_frac": 0.84
+      },
+      {
+       "count": 113,
+       "zone": "mid / right(-Y) / mid-height",
+       "center_uu": [
+        22.5,
+        -29.22,
+        6.21
+       ],
+       "bbox_min_uu": [
+        21.84,
+        -29.85,
+        3.76
+       ],
+       "bbox_max_uu": [
+        23.16,
+        -28.6,
+        8.67
+       ],
+       "length_uu": 4.92,
+       "width_uu": 1.37,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.48,
+       "convex_ring_frac": 0.92
+      },
+      {
+       "count": 112,
+       "zone": "rear / right(-Y) / mid-height",
+       "center_uu": [
+        -22.48,
+        -29.21,
+        6.24
+       ],
+       "bbox_min_uu": [
+        -23.09,
+        -29.84,
+        3.78
+       ],
+       "bbox_max_uu": [
+        -21.88,
+        -28.57,
+        8.69
+       ],
+       "length_uu": 4.91,
+       "width_uu": 1.3,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.39,
+       "convex_ring_frac": 0.95
+      },
+      {
+       "count": 110,
+       "zone": "rear / right(-Y) / mid-height",
+       "center_uu": [
+        -45.47,
+        -23.47,
+        6.22
+       ],
+       "bbox_min_uu": [
+        -46.05,
+        -24.02,
+        3.74
+       ],
+       "bbox_max_uu": [
+        -44.88,
+        -22.92,
+        8.7
+       ],
+       "length_uu": 4.96,
+       "width_uu": 1.21,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.43,
+       "convex_ring_frac": 0.92
+      },
+      {
+       "count": 110,
+       "zone": "rear / left(+Y) / mid-height",
+       "center_uu": [
+        -30.07,
+        22.16,
+        5.89
+       ],
+       "bbox_min_uu": [
+        -32.03,
+        20.24,
+        3.17
+       ],
+       "bbox_max_uu": [
+        -28.11,
+        24.08,
+        8.62
+       ],
+       "length_uu": 6.29,
+       "width_uu": 3.54,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.35,
+       "convex_ring_frac": 0.91
+      },
+      {
+       "count": 108,
+       "zone": "mid / left(+Y) / mid-height",
+       "center_uu": [
+        22.52,
+        29.21,
+        6.22
+       ],
+       "bbox_min_uu": [
+        22.01,
+        28.58,
+        3.74
+       ],
+       "bbox_max_uu": [
+        23.03,
+        29.85,
+        8.71
+       ],
+       "length_uu": 4.96,
+       "width_uu": 1.34,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.49,
+       "convex_ring_frac": 0.94
+      },
+      {
+       "count": 108,
+       "zone": "front / right(-Y) / mid-height",
+       "center_uu": [
+        45.57,
+        -29.2,
+        6.22
+       ],
+       "bbox_min_uu": [
+        44.98,
+        -29.85,
+        3.76
+       ],
+       "bbox_max_uu": [
+        46.16,
+        -28.56,
+        8.69
+       ],
+       "length_uu": 4.93,
+       "width_uu": 1.26,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.42,
+       "convex_ring_frac": 0.93
+      },
+      {
+       "count": 107,
+       "zone": "rear / left(+Y) / mid-height",
+       "center_uu": [
+        -45.63,
+        22.63,
+        6.04
+       ],
+       "bbox_min_uu": [
+        -46.3,
+        21.24,
+        3.45
+       ],
+       "bbox_max_uu": [
+        -44.97,
+        24.02,
+        8.62
+       ],
+       "length_uu": 5.23,
+       "width_uu": 2.28,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.44,
+       "convex_ring_frac": 0.92
+      },
+      {
+       "count": 107,
+       "zone": "rear / right(-Y) / mid-height",
+       "center_uu": [
+        -30.24,
+        -21.81,
+        5.98
+       ],
+       "bbox_min_uu": [
+        -32.34,
+        -24.08,
+        3.28
+       ],
+       "bbox_max_uu": [
+        -28.14,
+        -19.55,
+        8.68
+       ],
+       "length_uu": 6.93,
+       "width_uu": 5.02,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.64,
+       "convex_ring_frac": 0.93
+      },
+      {
+       "count": 105,
+       "zone": "rear / left(+Y) / mid-height",
+       "center_uu": [
+        -22.51,
+        29.22,
+        6.27
+       ],
+       "bbox_min_uu": [
+        -23.06,
+        28.67,
+        3.84
+       ],
+       "bbox_max_uu": [
+        -21.95,
+        29.76,
+        8.7
+       ],
+       "length_uu": 4.88,
+       "width_uu": 1.27,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.41,
+       "convex_ring_frac": 0.93
+      },
+      {
+       "count": 97,
+       "zone": "front / left(+Y) / mid-height",
+       "center_uu": [
+        45.52,
+        29.09,
+        6.33
+       ],
+       "bbox_min_uu": [
+        44.91,
+        28.54,
+        3.96
+       ],
+       "bbox_max_uu": [
+        46.13,
+        29.63,
+        8.69
+       ],
+       "length_uu": 4.74,
+       "width_uu": 1.24,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.37,
+       "convex_ring_frac": 0.92
+      },
+      {
+       "count": 26,
+       "zone": "rear / centre / low",
+       "center_uu": [
+        -52.65,
+        2.35,
+        4.65
+       ],
+       "bbox_min_uu": [
+        -54.28,
+        1.87,
+        3.7
+       ],
+       "bbox_max_uu": [
+        -51.03,
+        2.82,
+        5.59
+       ],
+       "length_uu": 3.68,
+       "width_uu": 1.21,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.44,
+       "convex_ring_frac": 0.87
+      },
+      {
+       "count": 20,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -36.48,
+        -22.59,
+        3.54
+       ],
+       "bbox_min_uu": [
+        -37.25,
+        -22.87,
+        3.22
+       ],
+       "bbox_max_uu": [
+        -35.7,
+        -22.32,
+        3.86
+       ],
+       "length_uu": 1.56,
+       "width_uu": 0.63,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.66,
+       "convex_ring_frac": 0.97
+      },
+      {
+       "count": 20,
+       "zone": "rear / left(+Y) / low",
+       "center_uu": [
+        -36.44,
+        22.59,
+        3.46
+       ],
+       "bbox_min_uu": [
+        -37.2,
+        22.32,
+        3.16
+       ],
+       "bbox_max_uu": [
+        -35.69,
+        22.87,
+        3.77
+       ],
+       "length_uu": 1.56,
+       "width_uu": 0.63,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.55,
+       "convex_ring_frac": 0.94
+      },
+      {
+       "count": 12,
+       "zone": "rear / centre / low",
+       "center_uu": [
+        -52.67,
+        -2.31,
+        4.81
+       ],
+       "bbox_min_uu": [
+        -54.32,
+        -2.78,
+        3.78
+       ],
+       "bbox_max_uu": [
+        -51.03,
+        -1.84,
+        5.84
+       ],
+       "length_uu": 3.85,
+       "width_uu": 1.47,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.22,
+       "convex_ring_frac": 0.86
+      },
+      {
+       "count": 11,
+       "zone": "front / left(+Y) / low",
+       "center_uu": [
+        36.43,
+        20.96,
+        3.41
+       ],
+       "bbox_min_uu": [
+        35.66,
+        19.45,
+        3.21
+       ],
+       "bbox_max_uu": [
+        37.2,
+        22.46,
+        3.61
+       ],
+       "length_uu": 2.91,
+       "width_uu": 2.19,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.67,
+       "convex_ring_frac": 0.95
+      },
+      {
+       "count": 8,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -51.85,
+        -21.12,
+        3.42
+       ],
+       "bbox_min_uu": [
+        -52.73,
+        -21.53,
+        3.33
+       ],
+       "bbox_max_uu": [
+        -50.97,
+        -20.7,
+        3.51
+       ],
+       "length_uu": 1.84,
+       "width_uu": 0.75,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.3,
+       "convex_ring_frac": 0.89
+      },
+      {
+       "count": 7,
+       "zone": "front / left(+Y) / low",
+       "center_uu": [
+        32.27,
+        21.28,
+        3.76
+       ],
+       "bbox_min_uu": [
+        32.18,
+        19.57,
+        3.66
+       ],
+       "bbox_max_uu": [
+        32.36,
+        22.99,
+        3.85
+       ],
+       "length_uu": 3.42,
+       "width_uu": 0.23,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.99,
+       "convex_ring_frac": 0.95
+      },
+      {
+       "count": 6,
+       "zone": "rear / left(+Y) / low",
+       "center_uu": [
+        -52.07,
+        15.05,
+        3.45
+       ],
+       "bbox_min_uu": [
+        -52.72,
+        14.97,
+        3.34
+       ],
+       "bbox_max_uu": [
+        -51.41,
+        15.12,
+        3.55
+       ],
+       "length_uu": 1.32,
+       "width_uu": 0.22,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.88,
+       "convex_ring_frac": 0.89
+      },
+      {
+       "count": 6,
+       "zone": "rear / left(+Y) / low",
+       "center_uu": [
+        -52.3,
+        20.96,
+        3.42
+       ],
+       "bbox_min_uu": [
+        -52.71,
+        20.57,
+        3.31
+       ],
+       "bbox_max_uu": [
+        -51.89,
+        21.36,
+        3.52
+       ],
+       "length_uu": 1.08,
+       "width_uu": 0.53,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.04,
+       "convex_ring_frac": 0.87
+      },
+      {
+       "count": 4,
+       "zone": "front / left(+Y) / low",
+       "center_uu": [
+        32.33,
+        9.15,
+        3.74
+       ],
+       "bbox_min_uu": [
+        32.3,
+        7.57,
+        3.65
+       ],
+       "bbox_max_uu": [
+        32.35,
+        10.73,
+        3.82
+       ],
+       "length_uu": 3.15,
+       "width_uu": 0.16,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.55,
+       "convex_ring_frac": 0.92
+      },
+      {
+       "count": 2,
+       "zone": "rear / right(-Y) / low",
+       "center_uu": [
+        -52.22,
+        -15.94,
+        3.41
+       ],
+       "bbox_min_uu": [
+        -52.38,
+        -15.99,
+        3.36
+       ],
+       "bbox_max_uu": [
+        -52.07,
+        -15.9,
+        3.46
+       ],
+       "length_uu": 0.0,
+       "width_uu": 0.0,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.61,
+       "convex_ring_frac": 0.82
+      },
+      {
+       "count": 2,
+       "zone": "rear / centre / low",
+       "center_uu": [
+        -52.23,
+        -5.41,
+        3.38
+       ],
+       "bbox_min_uu": [
+        -52.44,
+        -5.42,
+        3.37
+       ],
+       "bbox_max_uu": [
+        -52.02,
+        -5.41,
+        3.4
+       ],
+       "length_uu": 0.0,
+       "width_uu": 0.0,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.47,
+       "convex_ring_frac": 0.87
+      }
+     ]
+    },
+    "gate": "PASS",
+    "failures": []
+   }
+  },
+  "SM_Vortex_Windows": {
+   "gate": "PASS",
+   "failures": [],
+   "summary": {
+    "tris": 36302,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "needle_faces_lt1deg": 0,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "inside_out_shells": 0,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 0,
+    "concave_patches": 0
+   },
+   "sdf_parts": [
+    {
+     "raw": 381380,
+     "decimated": 24062,
+     "final": 23956,
+     "bad_after_decimate": 0,
+     "flips": 3041,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0001,
+     "t_mesh": 28.6,
+     "t_dec": 29.4,
+     "t_clean": 3.8,
+     "part": "Vortex_Windows",
+     "cell": 0.14,
+     "script_target": 2900,
+     "target": 24000,
+     "overrides": null
+    }
+   ],
+   "health": {
+    "verts": 18159,
+    "faces": 36302,
+    "tris": 36302,
+    "bbox_uu": [
+     [
+      -18.6,
+      -28.18,
+      19.8
+     ],
+     [
+      22.5,
+      28.18,
+      28.32
+     ]
+    ],
+    "open_shell_allowed": false,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "loose_edges": 0,
+    "loose_verts": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "sliver_pct": 0.0,
+    "needle_faces_lt1deg": 0,
+    "needle_pct": 0.0,
+    "min_angle_deg_p01": 9.976,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "shells": 4,
+    "closed_shells": 4,
+    "inside_out_shells": 0,
+    "custom_normals": true,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "min_face_area_uu2": 0.012786,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 0,
+    "spike_notch_by_test": {
+     "normal_spike": 0,
+     "fold_120": 0,
+     "broken_crease": 0
+    },
+    "authored_crease_edges": 0,
+    "allow": {
+     "file": null,
+     "split_normals_authored": false,
+     "zones": []
+    },
+    "max_vertex_normal_dev_deg": 11.05,
+    "max_unauthored_dihedral_deg": 46.47,
+    "concave_patches": 0,
+    "regions": {},
+    "gate": "PASS",
+    "failures": []
+   }
+  },
+  "SM_Vortex_Interior": {
+   "gate": "PASS",
+   "failures": [],
+   "summary": {
+    "tris": 60278,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "needle_faces_lt1deg": 0,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "inside_out_shells": 0,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 0,
+    "concave_patches": 15
+   },
+   "sdf_parts": [
+    {
+     "raw": 871292,
+     "decimated": 60278,
+     "final": 60278,
+     "bad_after_decimate": 0,
+     "flips": 7902,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 20.6,
+     "t_dec": 67.7,
+     "t_clean": 4.1,
+     "part": "Vortex_Interior",
+     "cell": 0.16,
+     "script_target": 9000,
+     "target": 60000,
+     "overrides": null
+    }
+   ],
+   "health": {
+    "verts": 30135,
+    "faces": 60278,
+    "tris": 60278,
+    "bbox_uu": [
+     [
+      -21.0,
+      -27.07,
+      9.35
+     ],
+     [
+      22.0,
+      27.07,
+      27.12
+     ]
+    ],
+    "open_shell_allowed": false,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "loose_edges": 0,
+    "loose_verts": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "sliver_pct": 0.0,
+    "needle_faces_lt1deg": 0,
+    "needle_pct": 0.0,
+    "min_angle_deg_p01": 12.054,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "shells": 1,
+    "closed_shells": 1,
+    "inside_out_shells": 0,
+    "custom_normals": true,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "min_face_area_uu2": 0.013384,
+    "spike_notch_vertices": 0,
+    "spike_notch_hidden": 0,
+    "spike_notch_by_test": {
+     "normal_spike": 0,
+     "fold_120": 0,
+     "broken_crease": 0
+    },
+    "authored_crease_edges": 0,
+    "allow": {
+     "file": null,
+     "split_normals_authored": false,
+     "zones": []
+    },
+    "max_vertex_normal_dev_deg": 21.71,
+    "max_unauthored_dihedral_deg": 60.27,
+    "concave_patches": 15,
+    "regions": {
+     "concave_patches": [
+      {
+       "count": 90,
+       "zone": "mid / left(+Y) / low",
+       "center_uu": [
+        -6.25,
+        10.5,
+        14.36
+       ],
+       "bbox_min_uu": [
+        -6.99,
+        5.42,
+        13.7
+       ],
+       "bbox_max_uu": [
+        -5.51,
+        15.59,
+        15.03
+       ],
+       "length_uu": 10.17,
+       "width_uu": 1.5,
+       "kind": "dimple",
+       "min_concave_radius_uu": 0.34,
+       "convex_ring_frac": 0.87
+      },
+      {
+       "count": 51,
+       "zone": "mid / centre / mid-height",
+       "center_uu": [
+        5.16,
+        -0.07,
+        15.41
+       ],
+       "bbox_min_uu": [
+        4.2,
+        -0.96,
+        14.6
+       ],
+       "bbox_max_uu": [
+        6.11,
+        0.81,
+        16.22
+       ],
+       "length_uu": 1.98,
+       "width_uu": 1.86,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.2,
+       "convex_ring_frac": 0.92
+      },
+      {
+       "count": 45,
+       "zone": "front / right(-Y) / low",
+       "center_uu": [
+        17.53,
+        -25.49,
+        11.65
+       ],
+       "bbox_min_uu": [
+        15.42,
+        -26.78,
+        10.66
+       ],
+       "bbox_max_uu": [
+        19.64,
+        -24.2,
+        12.64
+       ],
+       "length_uu": 4.31,
+       "width_uu": 2.51,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.32,
+       "convex_ring_frac": 0.94
+      },
+      {
+       "count": 42,
+       "zone": "front / left(+Y) / mid-height",
+       "center_uu": [
+        12.16,
+        24.64,
+        17.48
+       ],
+       "bbox_min_uu": [
+        11.28,
+        24.2,
+        14.12
+       ],
+       "bbox_max_uu": [
+        13.03,
+        25.08,
+        20.84
+       ],
+       "length_uu": 6.88,
+       "width_uu": 1.37,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.31,
+       "convex_ring_frac": 0.91
+      },
+      {
+       "count": 42,
+       "zone": "front / left(+Y) / low",
+       "center_uu": [
+        17.92,
+        25.5,
+        11.71
+       ],
+       "bbox_min_uu": [
+        16.2,
+        24.38,
+        10.81
+       ],
+       "bbox_max_uu": [
+        19.63,
+        26.63,
+        12.62
+       ],
+       "length_uu": 3.46,
+       "width_uu": 2.37,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.3,
+       "convex_ring_frac": 0.92
+      },
+      {
+       "count": 21,
+       "zone": "mid / left(+Y) / top",
+       "center_uu": [
+        -5.29,
+        14.21,
+        23.68
+       ],
+       "bbox_min_uu": [
+        -6.33,
+        13.26,
+        22.28
+       ],
+       "bbox_max_uu": [
+        -4.24,
+        15.17,
+        25.08
+       ],
+       "length_uu": 3.47,
+       "width_uu": 2.09,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.32,
+       "convex_ring_frac": 0.94
+      },
+      {
+       "count": 20,
+       "zone": "rear / right(-Y) / top",
+       "center_uu": [
+        -12.31,
+        -6.69,
+        22.46
+       ],
+       "bbox_min_uu": [
+        -12.42,
+        -7.8,
+        19.73
+       ],
+       "bbox_max_uu": [
+        -12.2,
+        -5.57,
+        25.2
+       ],
+       "length_uu": 5.73,
+       "width_uu": 1.43,
+       "kind": "dimple",
+       "min_concave_radius_uu": 1.42,
+       "convex_ring_frac": 0.94
+      },
+      {
+       "count": 19,
+       "zone": "mid / left(+Y) / top",
+       "center_uu": [
+        -5.24,
+        7.75,
+        24.57
+       ],
+       "bbox_min_uu": [
+        -6.44,
+        7.32,
+        23.97
+       ],
+       "bbox_max_uu": [
+        -4.03,
+        8.19,
+        25.16
+       ],
+       "length_uu": 2.45,
+       "width_uu": 0.88,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.04,
+       "convex_ring_frac": 0.93
+      },
+      {
+       "count": 16,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        -5.33,
+        -7.49,
+        24.76
+       ],
+       "bbox_min_uu": [
+        -6.33,
+        -7.79,
+        24.23
+       ],
+       "bbox_max_uu": [
+        -4.33,
+        -7.18,
+        25.29
+       ],
+       "length_uu": 1.99,
+       "width_uu": 0.83,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.08,
+       "convex_ring_frac": 0.88
+      },
+      {
+       "count": 13,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        -5.27,
+        -13.75,
+        24.64
+       ],
+       "bbox_min_uu": [
+        -6.15,
+        -14.13,
+        24.35
+       ],
+       "bbox_max_uu": [
+        -4.39,
+        -13.38,
+        24.94
+       ],
+       "length_uu": 1.78,
+       "width_uu": 0.87,
+       "kind": "saddle",
+       "min_concave_radius_uu": 0.93,
+       "convex_ring_frac": 0.89
+      },
+      {
+       "count": 6,
+       "zone": "front / right(-Y) / mid-height",
+       "center_uu": [
+        18.56,
+        -24.8,
+        20.19
+       ],
+       "bbox_min_uu": [
+        18.11,
+        -25.12,
+        19.47
+       ],
+       "bbox_max_uu": [
+        19.01,
+        -24.48,
+        20.91
+       ],
+       "length_uu": 1.7,
+       "width_uu": 0.7,
+       "kind": "saddle",
+       "min_concave_radius_uu": 1.99,
+       "convex_ring_frac": 0.88
+      },
+      {
+       "count": 4,
+       "zone": "front / left(+Y) / mid-height",
+       "center_uu": [
+        18.48,
+        24.99,
+        20.53
+       ],
+       "bbox_min_uu": [
+        18.08,
+        24.65,
+        20.17
+       ],
+       "bbox_max_uu": [
+        18.88,
+        25.32,
+        20.88
+       ],
+       "length_uu": 1.18,
+       "width_uu": 0.34,
+       "kind": "saddle",
+       "min_concave_radius_uu": 2.97,
+       "convex_ring_frac": 0.85
+      },
+      {
+       "count": 2,
+       "zone": "rear / left(+Y) / top",
+       "center_uu": [
+        -12.23,
+        10.87,
+        25.9
+       ],
+       "bbox_min_uu": [
+        -12.26,
+        10.85,
+        25.77
+       ],
+       "bbox_max_uu": [
+        -12.2,
+        10.9,
+        26.03
+       ],
+       "length_uu": 0.0,
+       "width_uu": 0.0,
+       "kind": "dimple",
+       "min_concave_radius_uu": 3.32,
+       "convex_ring_frac": 0.87
+      },
+      {
+       "count": 2,
+       "zone": "mid / right(-Y) / top",
+       "center_uu": [
+        -4.49,
+        -14.81,
+        22.17
+       ],
+       "bbox_min_uu": [
+        -4.52,
+        -14.87,
+        22.01
+       ],
+       "bbox_max_uu": [
+        -4.46,
+        -14.75,
+        22.33
+       ],
+       "length_uu": 0.0,
+       "width_uu": 0.0,
+       "kind": "saddle",
+       "min_concave_radius_uu": 2.77,
+       "convex_ring_frac": 0.88
+      },
+      {
+       "count": 1,
+       "zone": "mid / right(-Y) / mid-height",
+       "center_uu": [
+        -2.21,
+        -25.0,
+        15.5
+       ],
+       "bbox_min_uu": [
+        -2.21,
+        -25.0,
+        15.5
+       ],
+       "bbox_max_uu": [
+        -2.21,
+        -25.0,
+        15.5
+       ],
+       "length_uu": 0.0,
+       "width_uu": 0.0,
+       "kind": "dimple",
+       "min_concave_radius_uu": 3.28,
+       "convex_ring_frac": 0.86
+      }
+     ]
+    },
+    "gate": "PASS",
+    "failures": []
+   }
+  }
+ }
+}

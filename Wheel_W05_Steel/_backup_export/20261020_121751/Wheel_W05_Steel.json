@@ -1,0 +1,57 @@
+{
+  "wheel_design": "W05_Steel",
+  "mesh": "SM_Wheel_W05_Steel",
+  "description": "Chunky all-terrain toy tyre (2 staggered rows of 18 blocks, centre groove, shoulder lugs, one moulded step ring, no lettering) on a satin-black dished steel wheel: 6 round vents, raised centre disc with a bright rim ring and 6 bright nut nubs, axle bore in the exact centre. No emblem.",
+  "units": "uu, UE axes (X fwd, Y right, Z up); FBX authored in Blender metres, 1 m = 100 uu",
+  "radius": 13.0,
+  "width": 10.0,
+  "hub_radius": 7.9,
+  "bore_radius": 0.9,
+  "centre_disc": {
+    "radius": 2.6,
+    "face_y": 3.5,
+    "bright_ring": [
+      1.65,
+      2.45
+    ],
+    "nut_nubs": {
+      "count": 6,
+      "radius": 0.6,
+      "pcd_radius": 1.9
+    }
+  },
+  "vents": {
+    "count": 6,
+    "radius": 1.0,
+    "pcd_radius": 5.0
+  },
+  "axle_head_offset": 3.5,
+  "axle_head_note": "the peened steel axle head belongs to the casting (Cairn: SM_Cairn_Body, Zamac); its dome base sits on the centre disc at wheel centre + 3.5 along the axle, centred on the spin axis, standing 0.3 above the bright ring",
+  "origin": "wheel centre",
+  "axle_axis": "Y",
+  "outer_face": "Blender +Y = UE -Y, i.e. authored as a LEFT wheel. Right wheels: yaw 180 deg (tread is 180-deg symmetric: 18 staggered blocks per row).",
+  "slots": [
+    "Tire",
+    "Hub",
+    "HubBright"
+  ],
+  "slot_look": {
+    "Tire": "existing TireLug MI (hard black toy plastic, roughness 0.62)",
+    "Hub": "NEW MI_Hub_SatinBlack (satin black painted steel; brief \u00a73.4 rule-3 deviation, owner-visible choice: the reference wears black steel wheels)",
+    "HubBright": "the existing chrome Hub MI (centre ring + nut nubs)"
+  },
+  "tris": 14348,
+  "uv": {
+    "UV0": "smart unwrap (wear/grain)",
+    "UV1": "planar side projection X/Z over the wheel diameter"
+  },
+  "used_by": [
+    "Cairn"
+  ],
+  "export_pipeline": {
+    "exporter": "Tools/Assembly/blender_export_casting.py clean-v1 (16 Oct 2026)",
+    "health": "export/health.json",
+    "normals": "authored (computed after cleanup; import normals, do not recompute)"
+  },
+  "source": "SourceArt/Blender/Wheel_W05_Steel/build_Wheel_W05_Steel.py"
+}

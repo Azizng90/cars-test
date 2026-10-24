@@ -1,0 +1,230 @@
+{
+  "casting": "Vortex",
+  "class": "Wedge",
+  "brand": "STREAKLINE",
+  "version": "v2 (die-cast rebuild, 14 Oct 2026)",
+  "units": "uu, UE axes (X fwd, Y right, Z up); origin at ground level centred between the axles",
+  "length": 118.77,
+  "width": 80.94,
+  "height": 29.64,
+  "hitbox": {
+    "center": [
+      0.0,
+      0.0,
+      15.0
+    ],
+    "extent": [
+      64.0,
+      41.0,
+      15.0
+    ]
+  },
+  "wheel_design": "W02_Fan",
+  "wheel_radius": 9.8,
+  "wheel_width": 6.4,
+  "wheelbase": 68.0,
+  "track_front": 69.2,
+  "track_rear": 69.2,
+  "wheels": {
+    "FL": [
+      34.0,
+      -34.6,
+      9.8
+    ],
+    "FR": [
+      34.0,
+      34.6,
+      9.8
+    ],
+    "RL": [
+      -34.0,
+      -34.6,
+      9.8
+    ],
+    "RR": [
+      -34.0,
+      34.6,
+      9.8
+    ]
+  },
+  "wheel_mesh_note": "SM_Wheel_W02_Fan is authored as a LEFT wheel (show face to UE -Y); yaw the right wheels 180 deg (never mirror: the vanes are swept).",
+  "wheel_camber_toe_deg_preview": {
+    "FL": [
+      0.4,
+      -0.3
+    ],
+    "FR": [
+      -0.3,
+      0.25
+    ],
+    "RL": [
+      0.25,
+      0.35
+    ],
+    "RR": [
+      -0.45,
+      -0.2
+    ]
+  },
+  "arches": {
+    "radius": 12.1,
+    "centre_z": 10.1,
+    "tyre_gap_top": 2.6,
+    "well_wall_abs_y": 29.6
+  },
+  "ground_clearance": 3.6,
+  "parts": {
+    "Body": "SM_Vortex_Body",
+    "Base": "SM_Vortex_Base",
+    "Windows": "SM_Vortex_Windows",
+    "Interior": "SM_Vortex_Interior"
+  },
+  "feature": {
+    "type": "MoodPaint",
+    "panel": "bonnet",
+    "mask": "SM_Vortex_Body vertex colour Col.R = 1 on the bonnet lid (Paint faces), 0 elsewhere",
+    "uv1_rect": [
+      0.09063,
+      0.51562,
+      0.28906,
+      0.725
+    ],
+    "panel_rect_uu": {
+      "x": [
+        27.0,
+        52.6
+      ],
+      "half_width_rear": 13.6,
+      "half_width_front": 10.4,
+      "corner_radius": 2.4
+    }
+  },
+  "slots": {
+    "Body": [
+      "Paint",
+      "Chrome",
+      "Lamp",
+      "Zamac"
+    ],
+    "Base": [
+      "Base"
+    ],
+    "Windows": [
+      "Glass"
+    ],
+    "Interior": [
+      "Interior"
+    ]
+  },
+  "lamp_tint": "Body vertex colour 'Col' on Lamp faces (front only): amber = outer front parking lamps, clear white = inner. The lamps are CAST shapes coloured by printed ink: render Lamp as satin printed ink tinted by Col (not glass). The TAIL lamps have no Lamp faces: they are tampo (UV1 rear chart) on the Paint slot, printed on two cast lamp-pod dishes.",
+  "chrome": "two separate round bored exhaust tips under the tail centre (y = +-1.6) only",
+  "axles": {
+    "part": "Body",
+    "slot": "Zamac (r5b: bright bare steel, preview tint 0.86 / roughness 0.10)",
+    "radius": 0.72,
+    "z": 9.8,
+    "x": [
+      34.0,
+      -34.0
+    ],
+    "rear_well_inner_wall_abs_y": 24.0,
+    "half_length": 37.15,
+    "note": "thin steel axles in open channels under the body/base (visible from below); peened mushroom heads at |y| = 37.15 sit in the W02 hub centre holes"
+  },
+  "rivets": {
+    "part": "Body",
+    "slot": "Zamac",
+    "x": [
+      45.0,
+      -45.0
+    ],
+    "note": "two peened rivet heads under the base (body posts through the base); KO pops the base off"
+  },
+  "base_text_area_uu": {
+    "center": [
+      2.0,
+      0.0
+    ],
+    "half": [
+      16.3,
+      10.8
+    ],
+    "z": 3.8200000000000003,
+    "text": "STREAKLINE . VORTEX . 1993 . MADE IN ...  (decal; the panel is moulded plain)"
+  },
+  "tampo": {
+    "preview_texture": "SourceArt/Blender/Vortex/preview/Vortex_tampo_classof93.png",
+    "layout": "UV1 charts (see uv.UV1_body_windows); RGBA, straight alpha, sRGB",
+    "livery_classof93": "metallic grape enamel; lime + white twin stripes over bonnet/roof/deck; lime sill band with white + pink pinstripes and a raked lime flash into the scoop; white 'VORTEX' logotype with dark outline + lime speed lines on the doors; tail: two cast lamp pods printed red with amber inner thirds and a thin black bezel line, a black plate with white '93' on the cast panel between them, a small white VORTEX on the body-colour bumper; the deck stripes stop at the unprinted recessed engine bay (x -14, nothing printed behind it); the sill band stops ahead of the side scoop and resumes behind the rear axle; the side stripes end in a raked cut ahead of the tail corners",
+    "imperfections": "per-ink registration offset 0.3-0.5 uu per side, ragged edges, pinholes, density drift; the tail pad sits (0.38, -0.22) uu off the cast lamp/plate shapes"
+  },
+  "normals": "authored (analytic SDF gradients). Import normals, do not recompute.",
+  "glass": "r5 per-pane tint: SM_Vortex_Windows vertex colour Col.R = 1 on the rear pane, 0 on windscreen + side glass. Preview: windscreen/side light smoke 0.745 per surface (~55 %), rear pane dark smoke 0.40 per surface (~16 %) with low mirror reflectance (F0 ~0.5 %). UE M_ToyGlass should darken and de-gloss by Col.R the same way; interior a 0.22 dark grey (not 'Black', rule 5: tub legible from the front).",
+  "nanite": {
+    "Body": true,
+    "Base": true,
+    "Interior": true,
+    "Windows": false
+  },
+  "uv": {
+    "UV0": "smart unwrap per part, non-overlapping (wear, grain, chips)",
+    "UV1_body_windows": "tampo layout from the box x[-64,64] y[-41,41] uu (Blender axes): left side U 0-0.5 (front at U 0, as seen from the left), right side U 0.5-1 (front at U 1), sides V = 0.02 + z/256; top strip U = (64 - x)/128 (front at U 0), V = 0.30 + (41 - y)/128 (seen from above with the nose to the left); front faces U = 0.55 + (y + 41)/256, rear faces U = 0.05 + (41 - y)/256, both V = 0.17 + z/256; hidden faces parked at U,V 0.96-1. Blender UV (V up); the UE importer flips V so the painted image reads the same.",
+    "UV1_base": "projection from below, readable from below with the front to the right: U = (x + 64)/128, V = (41 - y)/82",
+    "UV1_interior": "copy of UV0",
+    "body_uv1_face_counts[left,right,top,front,rear,hidden]": [
+      14823,
+      14673,
+      80958,
+      6464,
+      10782,
+      158200
+    ]
+  },
+  "measured_bbox_uu_blender_axes": {
+    "Body": [
+      -57.92,
+      60.85,
+      -40.47,
+      40.47,
+      2.84,
+      29.64
+    ],
+    "Base": [
+      -54.4,
+      59.75,
+      -36.45,
+      36.45,
+      2.9,
+      8.8
+    ],
+    "Windows": [
+      -18.6,
+      22.5,
+      -28.18,
+      28.18,
+      19.8,
+      28.32
+    ],
+    "Interior": [
+      -21.0,
+      22.0,
+      -27.07,
+      27.07,
+      9.35,
+      27.12
+    ]
+  },
+  "tris": {
+    "Body": 285900,
+    "Base": 146436,
+    "Windows": 36302,
+    "Interior": 60278,
+    "Wheel_W02_Fan": 5380
+  },
+  "source": "SourceArt/Blender/Vortex/build_Vortex.py",
+  "export_pipeline": {
+    "exporter": "Tools/Assembly/blender_export_casting.py clean-v1 (16 Oct 2026)",
+    "health": "export/health.json",
+    "normals": "authored (computed after cleanup; import normals, do not recompute)"
+  }
+}

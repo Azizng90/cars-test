@@ -1,0 +1,35 @@
+{
+  "wheel_design": "W02_Fan",
+  "mesh": "SM_Wheel_W02_Fan",
+  "description": "Chrome fan/turbine disc: raised outer lip, dished floor with 10 swept vanes, centre boss with a peened axle head; hard black plastic low-profile tyre with two tread rings.",
+  "radius": 9.6,
+  "width": 8.0,
+  "units": "uu (1 uu = 1/16 real cm); FBX authored in Blender metres, 1 m = 100 uu",
+  "origin": "wheel centre",
+  "axle_axis": "Y",
+  "outer_face": "Blender +Y = left side of the car. After the FBX import that is UE -Y (left). Use as-is on the LEFT wheels (FL, RL); rotate 180 deg yaw for the RIGHT wheels (FR, RR). The vanes are swept, a yaw (not a mirror) keeps them correct.",
+  "spin_axis_ue": "Y",
+  "slots": [
+    "Tire",
+    "Hub"
+  ],
+  "tris": 5676,
+  "normals": "authored (analytic). Import normals, do not recompute.",
+  "uv": {
+    "UV0": "smart unwrap, non-overlapping",
+    "UV1": "planar side projection (hub face centred at 0.5,0.5)"
+  },
+  "native_for": [
+    "Vortex"
+  ],
+  "bbox_uu_blender_axes": [
+    -9.6,
+    9.6,
+    -3.94,
+    4.24,
+    -9.6,
+    9.6
+  ],
+  "scale_note": "If another casting needs a different radius, scale uniformly by radius/9.6.",
+  "source": "SourceArt/Blender/Wheel_W02_Fan/build_Wheel_W02_Fan.py"
+}

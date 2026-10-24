@@ -1,0 +1,328 @@
+{
+ "casting": "Wheel_W05_Steel",
+ "build_script": "SourceArt\\Blender\\Wheel_W05_Steel\\build_Wheel_W05_Steel.py",
+ "build_script_sha256": "a0f974cff115b6f5ba1ef3905aa54e6e7f7d56c2ba2ee0049e6aa51224de520c",
+ "build_script_mtime": "Tue Oct 20 13:08:05 2026",
+ "exporter": "clean-v1 (16 Oct 2026)",
+ "mode": "production",
+ "written": "2026-10-20 13:13:03",
+ "complete": true,
+ "error": null,
+ "thresholds": {
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "edges_with_3plus_faces": 0,
+  "degenerate_faces": 0,
+  "near_duplicate_verts": 0,
+  "sliver_pct": 0.5,
+  "needle_pct": 0.5,
+  "flipped_winding_edges": 0,
+  "inside_out_shells": 0,
+  "backfacing_normal_corners": 0,
+  "loose_verts": 0,
+  "loose_edges": 0,
+  "spike_notch_vertices": 0
+ },
+ "budget": {
+  "W05_Tire": 36000,
+  "W05_Hub": 10000,
+  "W05_HubBright": 2500
+ },
+ "normals": "authored",
+ "pass": false,
+ "units": "uu, casting Blender frame (+X front, +Y left, +Z up); 1 uu = 0.01 Blender m",
+ "parts": {
+  "SM_Wheel_W05_Steel": {
+   "gate": "FAIL",
+   "failures": [
+    "spike_notch_vertices = 8 > 0"
+   ],
+   "summary": {
+    "tris": 47628,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "needle_faces_lt1deg": 0,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "inside_out_shells": 0,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "spike_notch_vertices": 8,
+    "spike_notch_hidden": 2,
+    "concave_patches": 0
+   },
+   "sdf_parts": [
+    {
+     "raw": 858752,
+     "decimated": 36050,
+     "final": 35778,
+     "bad_after_decimate": 0,
+     "flips": 2864,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 9.2,
+     "t_dec": 57.2,
+     "t_clean": 2.3,
+     "part": "W05_Tire",
+     "cell": 0.08,
+     "script_target": 9000,
+     "target": 36000,
+     "overrides": null
+    },
+    {
+     "raw": 586668,
+     "decimated": 10036,
+     "final": 10024,
+     "bad_after_decimate": 0,
+     "flips": 1110,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 5.9,
+     "t_dec": 37.7,
+     "t_clean": 0.6,
+     "part": "W05_Hub",
+     "cell": 0.06,
+     "script_target": 4000,
+     "target": 10000,
+     "overrides": null
+    },
+    {
+     "raw": 139504,
+     "decimated": 2504,
+     "final": 1790,
+     "bad_after_decimate": 37,
+     "flips": 112,
+     "bad_left": 0,
+     "specks_dropped": [],
+     "voids_dropped": [],
+     "left": {
+      "open": 0,
+      "over3": 0,
+      "tiny": 0,
+      "needle": 0,
+      "inverted": 0
+     },
+     "surface_dev_uu_p99": 0.0,
+     "surface_dev_uu_max": 0.0,
+     "t_mesh": 1.1,
+     "t_dec": 7.0,
+     "t_clean": 0.2,
+     "part": "W05_HubBright",
+     "cell": 0.03,
+     "script_target": 1500,
+     "target": 2500,
+     "overrides": null
+    }
+   ],
+   "health": {
+    "verts": 23816,
+    "faces": 47628,
+    "tris": 47628,
+    "bbox_uu": [
+     [
+      -13.0,
+      -5.03,
+      -13.0
+     ],
+     [
+      13.0,
+      5.03,
+      13.0
+     ]
+    ],
+    "open_shell_allowed": false,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "edges_with_3plus_faces": 0,
+    "loose_edges": 0,
+    "loose_verts": 0,
+    "degenerate_faces": 0,
+    "near_duplicate_verts": 0,
+    "sliver_faces": 0,
+    "sliver_pct": 0.0,
+    "needle_faces_lt1deg": 0,
+    "needle_pct": 0.0,
+    "min_angle_deg_p01": 12.259,
+    "flipped_winding_edges": 0,
+    "folded_edges_gt150deg": 0,
+    "shells": 3,
+    "closed_shells": 3,
+    "inside_out_shells": 0,
+    "custom_normals": true,
+    "backfacing_normal_corners": 0,
+    "steep_normal_corners": 0,
+    "min_face_area_uu2": 0.011451,
+    "spike_notch_vertices": 8,
+    "spike_notch_hidden": 2,
+    "spike_notch_by_test": {
+     "normal_spike": 0,
+     "fold_120": 0,
+     "broken_crease": 8
+    },
+    "authored_crease_edges": 0,
+    "allow": {
+     "file": null,
+     "split_normals_authored": false,
+     "zones": []
+    },
+    "max_vertex_normal_dev_deg": 21.44,
+    "max_unauthored_dihedral_deg": 90.96,
+    "concave_patches": 0,
+    "regions": {
+     "spike_notch_vertices": [
+      {
+       "count": 3,
+       "zone": "front / right(-Y) / top",
+       "center_uu": [
+        7.15,
+        -4.46,
+        9.58
+       ],
+       "bbox_min_uu": [
+        6.84,
+        -4.5,
+        9.53
+       ],
+       "bbox_max_uu": [
+        7.46,
+        -4.43,
+        9.64
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 13.4,
+       "max_dihedral_deg": 91.0
+      },
+      {
+       "count": 2,
+       "zone": "mid / right(-Y) / low",
+       "center_uu": [
+        -5.24,
+        -1.02,
+        -11.56
+       ],
+       "bbox_min_uu": [
+        -5.28,
+        -1.04,
+        -11.6
+       ],
+       "bbox_max_uu": [
+        -5.21,
+        -1.01,
+        -11.51
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 11.9,
+       "max_dihedral_deg": 75.7
+      },
+      {
+       "count": 2,
+       "zone": "front / left(+Y) / mid-height",
+       "center_uu": [
+        12.78,
+        1.19,
+        -0.91
+       ],
+       "bbox_min_uu": [
+        12.71,
+        1.0,
+        -1.0
+       ],
+       "bbox_max_uu": [
+        12.84,
+        1.38,
+        -0.81
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 9.9,
+       "max_dihedral_deg": 90.3
+      },
+      {
+       "count": 1,
+       "zone": "front / right(-Y) / mid-height",
+       "center_uu": [
+        9.33,
+        -3.93,
+        -3.63
+       ],
+       "bbox_min_uu": [
+        9.33,
+        -3.93,
+        -3.63
+       ],
+       "bbox_max_uu": [
+        9.33,
+        -3.93,
+        -3.63
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 7.3,
+       "max_dihedral_deg": 83.5
+      }
+     ],
+     "spike_notch_hidden": [
+      {
+       "count": 2,
+       "zone": "mid / left(+Y) / mid-height",
+       "center_uu": [
+        -1.25,
+        3.37,
+        1.05
+       ],
+       "bbox_min_uu": [
+        -1.27,
+        3.12,
+        1.0
+       ],
+       "bbox_max_uu": [
+        -1.23,
+        3.61,
+        1.1
+       ],
+       "tests": [
+        "broken_crease"
+       ],
+       "max_normal_dev_deg": 5.2,
+       "max_dihedral_deg": 80.7
+      }
+     ]
+    },
+    "gate": "FAIL",
+    "failures": [
+     "spike_notch_vertices = 8 > 0"
+    ]
+   }
+  }
+ }
+}

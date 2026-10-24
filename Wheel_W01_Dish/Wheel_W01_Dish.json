@@ -1,0 +1,34 @@
+{
+  "wheel_design": "W01_Dish",
+  "mesh": "SM_Wheel_W01_Dish",
+  "description": "Era one-piece plastic toy wheel: narrow black plastic ring (no rubber sidewall, no tread, faint mould parting line) around a chrome-plated dish hub with a raised lip and a centre cap; through-bore where the casting's steel axle head shows; hollow back.",
+  "radius": 10.0,
+  "width": 7.0,
+  "hub_radius": 7.6,
+  "bore_radius": 0.95,
+  "axle_head_offset": 3.62,
+  "axle_head_note": "the peened steel axle head belongs to the casting (Base mesh); it sits at wheel centre +/- axle_head_offset along the axle, filling the bore",
+  "units": "uu (1 uu = 1/16 real cm); FBX authored in Blender metres, 1 m = 100 uu",
+  "origin": "wheel centre",
+  "axle_axis": "Y",
+  "outer_face": "Blender +Y = left side of the car. After the FBX import that is UE -Y (left). Use as-is on the LEFT wheels (FL, RL); rotate 180 deg yaw for the RIGHT wheels (FR, RR).",
+  "spin_axis_ue": "Y",
+  "slots": [
+    "Tire",
+    "Hub"
+  ],
+  "slot_look": {
+    "Tire": "hard black toy plastic with a moulded sheen (roughness ~0.3), NOT rubber",
+    "Hub": "vacuum-metallised chrome (roughness 0.04-0.08)"
+  },
+  "tris": 5088,
+  "uv": {
+    "UV0": "smart unwrap, non-overlapping",
+    "UV1": "planar side projection (hub face centred at 0.5,0.5)"
+  },
+  "native_for": [
+    "HatchlingS"
+  ],
+  "scale_note": "If another casting needs a different radius, scale uniformly by radius/10.0.",
+  "source": "SourceArt/Blender/Wheel_W01_Dish/build_Wheel_W01_Dish.py"
+}

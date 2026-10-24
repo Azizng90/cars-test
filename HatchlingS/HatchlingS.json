@@ -1,0 +1,386 @@
+{
+  "casting": "HatchlingS",
+  "display_name": "Hatchling S",
+  "nickname_1A": "Old Faithful",
+  "class": "Compact",
+  "brand": "STREAKLINE",
+  "casting_year": 1991,
+  "units": "uu, UE axes (X forward, Y right, Z up); origin at ground level centred between the axles",
+  "length": 113.49,
+  "width": 81.98,
+  "height": 47.46,
+  "bounds_min": [
+    -54.666,
+    -40.991,
+    0.0
+  ],
+  "bounds_max": [
+    58.82,
+    40.993,
+    47.458
+  ],
+  "roof_height": 39.63,
+  "hitbox": {
+    "center": [
+      2.0,
+      0.0,
+      20.0
+    ],
+    "extent": [
+      56.0,
+      42.0,
+      20.0
+    ]
+  },
+  "wheel_design": "W01_Dish",
+  "wheel_mesh": "SM_Wheel_W01_Dish",
+  "wheel_radius": 10.0,
+  "wheel_width": 7.0,
+  "wheelbase": 74.0,
+  "track": 73.2,
+  "wheels": {
+    "FL": [
+      37.0,
+      -36.6,
+      10.0
+    ],
+    "FR": [
+      37.0,
+      36.6,
+      10.0
+    ],
+    "RL": [
+      -37.0,
+      -36.6,
+      10.0
+    ],
+    "RR": [
+      -37.0,
+      36.6,
+      10.0
+    ]
+  },
+  "wheel_outer_face": "W01 mesh is authored with its show face on Blender +Y (= UE -Y, left). Left wheels (FL, RL) as-is; right wheels (FR, RR) yaw 180 deg.",
+  "wheel_cosmetic_wobble_deg": {
+    "FL": {
+      "camber": 0.4,
+      "toe": -0.3
+    },
+    "FR": {
+      "camber": -0.3,
+      "toe": 0.2
+    },
+    "RL": {
+      "camber": -0.2,
+      "toe": 0.4
+    },
+    "RR": {
+      "camber": 0.5,
+      "toe": -0.2
+    }
+  },
+  "wheel_wobble_note": "spec 4b rule 3: tiny per-wheel camber/toe imperfection, cosmetic only (apply to the wheel mesh component, not to physics)",
+  "wheel_arch": {
+    "radius": 12.9,
+    "centre_z": 10.2,
+    "gap_front": 2.8,
+    "gap_rear": 3.4,
+    "note": "toy ride height; the wheel may travel ~2.5 uu up before touching the arch"
+  },
+  "stance": {
+    "rake_deg": 0.5,
+    "pivot_z": 10.0,
+    "note": "body, base, windows and interior meshes are already pitched nose-down by rake_deg about the axle line; do not add it again"
+  },
+  "axles": {
+    "radius": 0.9,
+    "z": 10.0,
+    "x": [
+      37.0,
+      -37.0
+    ],
+    "half_length": 39.2,
+    "part": "Base",
+    "vertex_color": "R",
+    "heads": {
+      "y": 40.22,
+      "radius": 1.32,
+      "note": "peened steel heads sit in the W01 hub bores; keep wheel centres at the sidecar positions (no visual suspension travel), or they float"
+    }
+  },
+  "base_band": {
+    "z": [
+      2.0,
+      9.2
+    ],
+    "inset": -0.3,
+    "note": "black plastic band visible under the body sill in side view (spec 4b rule 4). Rev 5: behind the rear wheels it is only a thin lip (z 2.0-4.4 visible, tucked ~1.2 uu under the body-colour rear bumper) with one bare-zamac exhaust tip (Col R); there is no black rear bumper any more - the body paint wraps the tail down to z 4.4 (spec 4b rule 11)"
+  },
+  "parts": {
+    "Body": "SM_HatchlingS_Body",
+    "Base": "SM_HatchlingS_Base",
+    "Windows": "SM_HatchlingS_Windows",
+    "Interior": "SM_HatchlingS_Interior"
+  },
+  "slots": {
+    "Body": [
+      "Paint",
+      "Chrome",
+      "Lamp",
+      "Zamac"
+    ],
+    "Base": [
+      "Base"
+    ],
+    "Windows": [
+      "Glass"
+    ],
+    "Interior": [
+      "Interior"
+    ]
+  },
+  "slot_use": {
+    "Paint": "the whole casting incl. cast lamp bosses, grille grooves, mirror nubs and the roof lamp bar (lamps/grille are coloured by the tampo)",
+    "Chrome": "rally lamp pods",
+    "Lamp": "rally lamp lenses (amber via Col)",
+    "Zamac": "bare lamp stalks"
+  },
+  "feature": {
+    "type": "MoodPaint",
+    "panel": "roof",
+    "panel_center": [
+      -21.5,
+      -0.0,
+      40.0
+    ],
+    "panel_extent": [
+      9.0,
+      15.5
+    ],
+    "panel_corner_radius": 3.2,
+    "panel_uv1_rect": [
+      0.11667,
+      0.76042,
+      0.19167,
+      0.88958
+    ],
+    "note": "engraved rounded-rectangle panel on the roof between the roof scoop and the spoiler; mask it in M_ToyPaint with panel_uv1_rect (u0,v0,u1,v1); the tampo leaves it clear"
+  },
+  "rally_lamps": {
+    "count": 2,
+    "radius": 3.4,
+    "lens_centres": [
+      [
+        4.6,
+        -8.8,
+        44.076
+      ],
+      [
+        4.6,
+        8.8,
+        44.076
+      ]
+    ],
+    "top_z": 47.48,
+    "note": "pods on a bar cast into the roof front; they stand above the 40 uu hitbox (visual only)"
+  },
+  "headlamps": {
+    "type": "cast bosses printed by the tampo (silver bezel, white main lamp, yellow driving lamp)",
+    "centres": [
+      [
+        56.08,
+        -22.6,
+        17.2
+      ],
+      [
+        56.08,
+        22.6,
+        17.2
+      ]
+    ],
+    "half_size_yz": [
+      6.6,
+      2.7
+    ]
+  },
+  "tail_lamps": {
+    "type": "cast bosses printed by the tampo (dark-red rim, red lens, amber indicator outer end, white reverse inner end); rev 5: printed plate (cream, black border, 'OF 91') between them, rev 10: on the top face of a raised 0.3 uu cast plate boss; cast body-colour rear bumper below",
+    "centres": [
+      [
+        -52.09,
+        -25.5,
+        20.5
+      ],
+      [
+        -52.09,
+        25.5,
+        20.5
+      ]
+    ],
+    "half_size_yz": [
+      5.0,
+      2.8
+    ]
+  },
+  "vertex_color": {
+    "Body": "Col on the Lamp slot: amber (1,0.70,0.16) = rally lamps; white elsewhere. Multiply the Lamp colour by it",
+    "Base": "Col: R = steel axles + peened heads, G = rivet heads, black = moulded black plastic base"
+  },
+  "uv": {
+    "UV0": "smart unwrap per part, non-overlapping (wear / grain masks)",
+    "UV1": "tampo layout in the un-raked casting frame (uniform scale 0.5/120 per uu): left side U0-0.5 V0-0.2 (front at U0, as seen from the left), right side U0.5-1 V0-0.2 (front at U1), top strip U0-0.5 V0.65-1 (U rear->front from x=-58.5, V = 1-(42-y)/240), front island U0.55-0.9 V0.25-0.445 (U from the car's right to left, V by height), rear island U0.55-0.9 V0.45-0.645 (U from left to right as seen from behind), inside/underside parked in U0.92-1 V0.92-1"
+  },
+  "default_variant": "OldFaithful",
+  "variants": {
+    "OldFaithful": {
+      "card": "Summer Starter - Old Faithful (owned, loose)",
+      "paint": {
+        "name": "Streak Blue metallic",
+        "base_color_srgb": "#1C53AA",
+        "base_color_linear": [
+          0.012,
+          0.088,
+          0.4
+        ],
+        "finish": "metallic enamel, fine visible flake, mild orange-peel gloss clearcoat (coat roughness ~0.025)",
+        "metallic": 0.66,
+        "roughness": 0.3
+      },
+      "tampo": {
+        "texture": "SourceArt/Blender/HatchlingS/textures/T_HatchlingS_OldFaithful_Tampo.png",
+        "metal_mask": "SourceArt/Blender/HatchlingS/textures/T_HatchlingS_OldFaithful_TampoMetal.png",
+        "uv": "UV1",
+        "inks": {
+          "white": [
+            0.94,
+            0.93,
+            0.89
+          ],
+          "yellow": [
+            0.98,
+            0.76,
+            0.07
+          ],
+          "red": [
+            0.86,
+            0.16,
+            0.08
+          ],
+          "black": [
+            0.045,
+            0.045,
+            0.05
+          ],
+          "silver": [
+            0.74,
+            0.75,
+            0.76
+          ],
+          "lens": [
+            0.96,
+            0.96,
+            0.93
+          ],
+          "fog": [
+            0.99,
+            0.85,
+            0.25
+          ],
+          "tail": [
+            0.7,
+            0.035,
+            0.04
+          ],
+          "amber": [
+            0.98,
+            0.52,
+            0.06
+          ],
+          "plate": [
+            0.9,
+            0.85,
+            0.66
+          ],
+          "taildk": [
+            0.36,
+            0.02,
+            0.03
+          ],
+          "ring": [
+            0.86,
+            0.16,
+            0.08
+          ]
+        },
+        "design": "1991 rally-hatch: white side band with yellow + red pinstripes (italic cut), red-ringed white door roundel with a knocked-out '7', red 'S' casting badge on the C-pillar, white twin bonnet stripes with red pinstripes, printed silver/white/yellow headlamps, black grille, red/amber/white tail lamps with a dark-red rim, cream rear plate printed 'OF 91' with a black border",
+        "flaws": "0.3-0.5 uu per-ink registration offsets, wobbly edges, density variation, pinholes, thin print in the door grooves",
+        "blend": "alpha = ink coverage; ink is matte-ish (roughness ~0.4, clearcoat reduced), metal_mask R = metallic silver ink"
+      },
+      "interior": {
+        "color_linear": [
+          0.11,
+          0.11,
+          0.115
+        ],
+        "name": "charcoal",
+        "note": "rev 9: tub clipped by the true cabin field (front seat backs and wheel rim whole), cast-in wheel = rim over a dished disc; rev 8: mid-dark charcoal one-colour tub (spec 4b rule 13) with rear side trim + arch humps, a quarter-window trim panel and a widened rear bench, = INTERIORS['Charcoal'] in Tools/Assembly/import_castings.py (OldFaithful interior='Charcoal')"
+      },
+      "windows": {
+        "tint_per_surface_linear": [
+          0.7,
+          0.72,
+          0.72
+        ],
+        "transmission_through_piece": 0.5,
+        "thickness": 2.3,
+        "note": "light-smoke clear plastic; the interior must stay clearly visible"
+      },
+      "base": "black plastic (Col R/G steel)",
+      "wheels": "W01_Dish chrome hub / black ring"
+    }
+  },
+  "base_decal_area": {
+    "center": [
+      -2.0,
+      -0.0,
+      2.0
+    ],
+    "extent": [
+      20.0,
+      12.0
+    ],
+    "text": "STREAKLINE \u00b7 HATCHLING S \u00b7 1991 \u00b7 MADE IN ...",
+    "note": "recessed plain panel on the underside for a decal"
+  },
+  "rivets": [
+    [
+      45.0,
+      -0.0,
+      2.0
+    ],
+    [
+      -44.0,
+      -0.0,
+      2.0
+    ]
+  ],
+  "tris": {
+    "SM_HatchlingS_Body": 296344,
+    "SM_HatchlingS_Base": 157382,
+    "SM_HatchlingS_Windows": 21034,
+    "SM_HatchlingS_Interior": 60176
+  },
+  "nanite": {
+    "Body": true,
+    "Base": true,
+    "Windows": false,
+    "Interior": true
+  },
+  "export": "FBX per part, Blender metres at game scale (1 m = 100 uu), axis_forward X, axis_up Z",
+  "source": "SourceArt/Blender/HatchlingS/build_HatchlingS.py (rev 10: Opus rear pass 5b - one-piece rear quarter (long C2 flare taper, one hip roll), capped tailgate lines, raised plate boss, softer tail notch, local refinement of the tail / notch / side-pane bottoms; rev 9: Opus rear pass 5 - one-crown shoulder (no badge double image), straight-drop tail corners with a rear notch + open rear wells (axle stub visible at 3/4-rear axle height), tailgate lines into the bumper ledge, soft door/bonnet lines, flat window panes, true-cabin interior; r5 spike/notch gate 0 on every part)",
+  "export_pipeline": {
+    "exporter": "Tools/Assembly/blender_export_casting.py clean-v1 (16 Oct 2026)",
+    "health": "export/health.json",
+    "normals": "authored (computed after cleanup; import normals, do not recompute)"
+  }
+}
